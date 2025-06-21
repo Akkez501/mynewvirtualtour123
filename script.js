@@ -335,37 +335,11 @@
  "height": 300
 },
 {
- "items": [
-  {
-   "media": "this.video_90C03AEB_8241_D632_41BC_6B8C88D4A631",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_84512845_9144_B5F2_41E0_C37B6B12C3D6, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_84512845_9144_B5F2_41E0_C37B6B12C3D6, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_84512845_9144_B5F2_41E0_C37B6B12C3D6",
- "class": "PlayList"
-},
-{
  "label": "Photo Album 2 (1)",
  "id": "album_8E78E72C_81C0_FE36_41BE_F709541CA1EF",
  "thumbnailUrl": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_t.png",
  "playList": "this.album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_AlbumPlayList",
  "class": "PhotoAlbum"
-},
-{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_8450E845_9144_B5F2_41D4_5989EE17AC16, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_8450E845_9144_B5F2_41D4_5989EE17AC16, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_8450E845_9144_B5F2_41D4_5989EE17AC16",
- "class": "PlayList"
 },
 {
  "duration": 2000,
@@ -374,26 +348,41 @@
  "easing": "linear"
 },
 {
+ "items": [
+  {
+   "media": "this.video_90C03AEB_8241_D632_41BC_6B8C88D4A631",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_8473F814_91CC_5592_41D3_58CFB9DDBF50, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_8473F814_91CC_5592_41D3_58CFB9DDBF50, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_8473F814_91CC_5592_41D3_58CFB9DDBF50",
+ "class": "PlayList"
+},
+{
  "viewerArea": "this.MainViewer",
  "id": "MainViewerVideoPlayer",
  "class": "VideoPlayer",
  "displayPlaybackBar": true
 },
 {
- "label": "Flying Hearts Green Screen Effects",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B_t.jpg",
- "width": 1920,
- "loop": false,
- "id": "video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B",
- "class": "Video",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "class": "VideoResource",
-  "height": 1080,
-  "mp4Url": "media/video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B.mp4"
- }
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_8473E814_91CC_5592_4139_39DAC8D1EED0, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_8473E814_91CC_5592_4139_39DAC8D1EED0, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_8473E814_91CC_5592_4139_39DAC8D1EED0",
+ "class": "PlayList"
+},
+{
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerPhotoAlbumPlayer",
+ "class": "PhotoAlbumPlayer"
 },
 {
  "duration": 5000,
@@ -421,11 +410,6 @@
  "id": "MainViewerPanoramaPlayer",
  "class": "PanoramaPlayer",
  "mouseControlMode": "drag_acceleration"
-},
-{
- "viewerArea": "this.MainViewer",
- "id": "MainViewerPhotoAlbumPlayer",
- "class": "PhotoAlbumPlayer"
 },
 {
  "displayMovements": [
@@ -535,17 +519,17 @@
 {
  "label": "Flying Hearts Green Screen Effects",
  "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_90C03AEB_8241_D632_41BC_6B8C88D4A631_t.jpg",
+ "thumbnailUrl": "media/video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B_t.jpg",
  "width": 1920,
  "loop": false,
- "id": "video_90C03AEB_8241_D632_41BC_6B8C88D4A631",
+ "id": "video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B",
  "class": "Video",
  "height": 1080,
  "video": {
   "width": 1920,
   "class": "VideoResource",
   "height": 1080,
-  "mp4Url": "media/video_90C03AEB_8241_D632_41BC_6B8C88D4A631.mp4"
+  "mp4Url": "media/video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B.mp4"
  }
 },
 {
@@ -885,6 +869,22 @@
  "height": 300
 },
 {
+ "label": "Flying Hearts Green Screen Effects",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_90C03AEB_8241_D632_41BC_6B8C88D4A631_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "id": "video_90C03AEB_8241_D632_41BC_6B8C88D4A631",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_90C03AEB_8241_D632_41BC_6B8C88D4A631.mp4"
+ }
+},
+{
  "progressBarBackgroundColor": [
   "#3399FF"
  ],
@@ -1063,7 +1063,7 @@
  },
  "paddingLeft": 0,
  "propagateClick": false,
- "scaleMode": "fill"
+ "scaleMode": "fit_inside"
 },
 {
  "transparencyActive": false,

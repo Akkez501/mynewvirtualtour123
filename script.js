@@ -10,6 +10,19 @@
  "mouseControlMode": "drag_acceleration"
 },
 {
+ "items": [
+  {
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BFEF05FF_AF67_04B6_41D9_746B369AEDEE, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BFEF05FF_AF67_04B6_41D9_746B369AEDEE, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_BFEF05FF_AF67_04B6_41D9_746B369AEDEE",
+ "class": "PlayList"
+},
+{
  "viewerArea": "this.MainViewer",
  "id": "MainViewerVideoPlayer",
  "class": "VideoPlayer",
@@ -19,13 +32,13 @@
  "items": [
   {
    "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BCAABF26_ACA3_0556_41E4_244EE3DEEC1D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BCAABF26_ACA3_0556_41E4_244EE3DEEC1D, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BFEF75FF_AF67_04B6_41DF_E8CC35F747E2, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BFEF75FF_AF67_04B6_41DF_E8CC35F747E2, 0)",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer",
    "class": "VideoPlayListItem"
   }
  ],
- "id": "playList_BCAABF26_ACA3_0556_41E4_244EE3DEEC1D",
+ "id": "playList_BFEF75FF_AF67_04B6_41DF_E8CC35F747E2",
  "class": "PlayList"
 },
 {
@@ -98,19 +111,6 @@
   "height": 1920,
   "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
  }
-},
-{
- "items": [
-  {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BCAA8F26_ACA3_0556_41E2_44705BA07A42, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BCAA8F26_ACA3_0556_41E2_44705BA07A42, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_BCAA8F26_ACA3_0556_41E2_44705BA07A42",
- "class": "PlayList"
 },
 {
  "items": [
@@ -580,13 +580,14 @@
  "class": "WebFrame"
 },
 {
+ "scaleMode": "fit_inside",
  "minHeight": 1,
  "id": "Image_BECFF904_AD63_0D4A_41E0_4CD7AEF7E4E5",
- "right": "34.5%",
+ "left": "25.21%",
  "minWidth": 1,
  "borderSize": 0,
  "maxWidth": 821,
- "width": "30.941%",
+ "width": "49.517%",
  "shadow": false,
  "verticalAlign": "middle",
  "top": "0%",
@@ -596,14 +597,13 @@
  "backgroundOpacity": 0,
  "paddingTop": 0,
  "maxHeight": 1460,
+ "propagateClick": false,
  "data": {
   "name": "Image10517"
  },
- "propagateClick": false,
- "scaleMode": "fit_inside",
+ "horizontalAlign": "center",
  "paddingBottom": 0,
  "paddingLeft": 0,
- "horizontalAlign": "center",
  "class": "Image",
  "borderRadius": 0
 },
@@ -611,11 +611,11 @@
  "scaleMode": "fit_inside",
  "minHeight": 1,
  "id": "Image_BED5954F_AD61_05D6_41D9_4172AFF49B11",
- "left": "34.62%",
+ "left": "25.21%",
  "minWidth": 1,
  "borderSize": 0,
  "maxWidth": 821,
- "width": "30.7%",
+ "width": "49.517%",
  "shadow": false,
  "verticalAlign": "middle",
  "top": "0%",
@@ -636,13 +636,14 @@
  "borderRadius": 0
 },
 {
+ "scaleMode": "fit_inside",
  "minHeight": 1,
  "id": "Image_BE7081F8_AD61_7CBB_41D9_909B036414AE",
- "right": "34.56%",
+ "left": "25.21%",
  "minWidth": 1,
  "borderSize": 0,
  "maxWidth": 821,
- "width": "30.82%",
+ "width": "49.517%",
  "shadow": false,
  "verticalAlign": "middle",
  "top": "0%",
@@ -652,25 +653,24 @@
  "backgroundOpacity": 0,
  "paddingTop": 0,
  "maxHeight": 1460,
+ "propagateClick": false,
  "data": {
   "name": "Image10787"
  },
- "propagateClick": false,
- "scaleMode": "fit_inside",
+ "horizontalAlign": "center",
  "paddingBottom": 0,
  "paddingLeft": 0,
- "horizontalAlign": "center",
  "class": "Image",
  "borderRadius": 0
 },
 {
  "minHeight": 1,
  "id": "Image_BEE501E9_AD6F_1CDA_41E1_C8DFBFE23FC5",
- "right": "34.38%",
+ "right": "24.86%",
  "minWidth": 1,
  "borderSize": 0,
  "maxWidth": 821,
- "width": "30.941%",
+ "width": "49.517%",
  "shadow": false,
  "verticalAlign": "middle",
  "top": "0%",

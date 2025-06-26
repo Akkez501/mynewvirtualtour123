@@ -17,12 +17,6 @@
  }
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "class": "VideoPlayer",
- "displayPlaybackBar": true
-},
-{
  "hfovMax": 130,
  "hfovMin": "120%",
  "frames": [
@@ -323,38 +317,59 @@
  "height": 300
 },
 {
- "label": "Black and Blue Simple Happy Birthday Instagram Story",
- "id": "video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8",
- "thumbnailUrl": "media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8_t.jpg",
- "width": 1080,
- "loop": false,
- "scaleMode": "fit_inside",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8.mp4"
- }
-},
-{
- "items": [
-  {
-   "media": "this.video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A455728C_ABA1_1F59_41DE_95796E2D738A, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A455728C_ABA1_1F59_41DE_95796E2D738A, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_A455728C_ABA1_1F59_41DE_95796E2D738A",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "displayPlaybackBar": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "viewerArea": "this.MainViewer",
  "id": "MainViewerPhotoAlbumPlayer",
  "class": "PhotoAlbumPlayer"
+},
+{
+ "items": [
+  {
+   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
+   "class": "PanoramaPlayListItem"
+  },
+  {
+   "media": "this.panorama_8C3B35B8_81C3_721E_41DF_48970F4CC6A9",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 2)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_8C3B35B8_81C3_721E_41DF_48970F4CC6A9_camera",
+   "class": "PanoramaPlayListItem"
+  },
+  {
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 2, 3)",
+   "media": "this.album_8E78E72C_81C0_FE36_41BE_F709541CA1EF",
+   "class": "PhotoAlbumPlayListItem",
+   "player": "this.MainViewerPhotoAlbumPlayer"
+  },
+  {
+   "media": "this.video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 3, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 3)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 3, 4)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  },
+  {
+   "media": "this.video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 4, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 4)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 4, 0)",
+   "player": "this.MainViewerVideoPlayer",
+   "end": "this.trigger('tourEnded')",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "mainPlayList",
+ "class": "PlayList"
 },
 {
  "duration": 2000,
@@ -372,6 +387,133 @@
   "levels": [
    {
     "url": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_3.png",
+    "class": "ImageResourceLevel"
+   }
+  ],
+  "class": "ImageResource"
+ },
+ "class": "Photo",
+ "height": 300
+},
+{
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -137.57,
+  "class": "PanoramaCameraPosition",
+  "pitch": 4.02
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "easing": "cubic_in",
+    "yawSpeed": 7.96
+   },
+   {
+    "yawDelta": 323,
+    "class": "DistancePanoramaCameraMovement",
+    "easing": "linear",
+    "yawSpeed": 7.96
+   },
+   {
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "easing": "cubic_out",
+    "yawSpeed": 7.96
+   }
+  ],
+  "class": "PanoramaCameraSequence"
+ },
+ "id": "panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
+ "displayMovements": [
+  {
+   "duration": 1000,
+   "class": "TargetRotationalCameraDisplayMovement",
+   "easing": "linear"
+  },
+  {
+   "targetPitch": 4.02,
+   "duration": 3000,
+   "class": "TargetRotationalCameraDisplayMovement",
+   "easing": "cubic_in_out",
+   "targetStereographicFactor": 0
+  }
+ ],
+ "automaticZoomSpeed": 10,
+ "displayOriginPosition": {
+  "hfov": 165,
+  "stereographicFactor": 1,
+  "class": "RotationalCameraDisplayPosition",
+  "yaw": -137.57,
+  "pitch": -90
+ }
+},
+{
+ "label": "Flying Hearts Green Screen Effects",
+ "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+ "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "scaleMode": "fit_inside",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
+ }
+},
+{
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "class": "VideoPlayer",
+ "displayPlaybackBar": true
+},
+{
+ "label": "Black and Blue Simple Happy Birthday Instagram Story",
+ "id": "video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8",
+ "thumbnailUrl": "media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "scaleMode": "fit_inside",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8.mp4"
+ }
+},
+{
+ "label": "Black and Blue Simple Happy Birthday Instagram Story",
+ "id": "video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43",
+ "thumbnailUrl": "media/video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "scaleMode": "fit_inside",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43.mp4"
+ }
+},
+{
+ "duration": 5000,
+ "label": "2 (1)",
+ "id": "album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_0",
+ "thumbnailUrl": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_0_t.png",
+ "width": 300,
+ "image": {
+  "levels": [
+   {
+    "url": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_0.png",
     "class": "ImageResourceLevel"
    }
   ],
@@ -663,172 +805,17 @@
  "class": "Panorama"
 },
 {
- "label": "Flying Hearts Green Screen Effects",
- "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
- "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
- "width": 1920,
- "loop": false,
- "scaleMode": "fit_inside",
- "class": "Video",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "class": "VideoResource",
-  "height": 1080,
-  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
- }
-},
-{
  "items": [
   {
    "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A455B28C_ABA1_1F59_41D4_C5FD8EB73DC5, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A455B28C_ABA1_1F59_41D4_C5FD8EB73DC5, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A4F5981A_ABE3_0B7E_41A6_0A1AFD1A0FA9, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A4F5981A_ABE3_0B7E_41A6_0A1AFD1A0FA9, 0)",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer",
    "class": "VideoPlayListItem"
   }
  ],
- "id": "playList_A455B28C_ABA1_1F59_41D4_C5FD8EB73DC5",
+ "id": "playList_A4F5981A_ABE3_0B7E_41A6_0A1AFD1A0FA9",
  "class": "PlayList"
-},
-{
- "items": [
-  {
-   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
-   "class": "PanoramaPlayListItem"
-  },
-  {
-   "media": "this.panorama_8C3B35B8_81C3_721E_41DF_48970F4CC6A9",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 2)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_8C3B35B8_81C3_721E_41DF_48970F4CC6A9_camera",
-   "class": "PanoramaPlayListItem"
-  },
-  {
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 2, 3)",
-   "media": "this.album_8E78E72C_81C0_FE36_41BE_F709541CA1EF",
-   "class": "PhotoAlbumPlayListItem",
-   "player": "this.MainViewerPhotoAlbumPlayer"
-  },
-  {
-   "media": "this.video_8E9B971F_81C1_3E12_41BE_3B8D8F8A178B",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 3, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 3)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 3, 4)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  },
-  {
-   "media": "this.video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 4, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 4)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 4, 0)",
-   "player": "this.MainViewerVideoPlayer",
-   "end": "this.trigger('tourEnded')",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "mainPlayList",
- "class": "PlayList"
-},
-{
- "label": "Black and Blue Simple Happy Birthday Instagram Story",
- "id": "video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43",
- "thumbnailUrl": "media/video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43_t.jpg",
- "width": 1080,
- "loop": false,
- "scaleMode": "fit_inside",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43.mp4"
- }
-},
-{
- "duration": 5000,
- "label": "2 (1)",
- "id": "album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_0",
- "thumbnailUrl": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_0_t.png",
- "width": 300,
- "image": {
-  "levels": [
-   {
-    "url": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_0.png",
-    "class": "ImageResourceLevel"
-   }
-  ],
-  "class": "ImageResource"
- },
- "class": "Photo",
- "height": 300
-},
-{
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": -137.57,
-  "class": "PanoramaCameraPosition",
-  "pitch": 4.02
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "easing": "cubic_in",
-    "yawSpeed": 7.96
-   },
-   {
-    "yawDelta": 323,
-    "class": "DistancePanoramaCameraMovement",
-    "easing": "linear",
-    "yawSpeed": 7.96
-   },
-   {
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "easing": "cubic_out",
-    "yawSpeed": 7.96
-   }
-  ],
-  "class": "PanoramaCameraSequence"
- },
- "id": "panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
- "displayMovements": [
-  {
-   "duration": 1000,
-   "class": "TargetRotationalCameraDisplayMovement",
-   "easing": "linear"
-  },
-  {
-   "targetPitch": 4.02,
-   "duration": 3000,
-   "class": "TargetRotationalCameraDisplayMovement",
-   "easing": "cubic_in_out",
-   "targetStereographicFactor": 0
-  }
- ],
- "automaticZoomSpeed": 10,
- "displayOriginPosition": {
-  "hfov": 165,
-  "stereographicFactor": 1,
-  "class": "RotationalCameraDisplayPosition",
-  "yaw": -137.57,
-  "pitch": -90
- }
-},
-{
- "viewerArea": "this.MainViewer",
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "displayPlaybackBar": true,
- "mouseControlMode": "drag_acceleration"
 },
 {
  "duration": 5000,
@@ -854,6 +841,19 @@
  "thumbnailUrl": "media/album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_t.png",
  "playList": "this.album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_AlbumPlayList",
  "class": "PhotoAlbum"
+},
+{
+ "items": [
+  {
+   "media": "this.video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A4F5C81B_ABE3_0B7E_41DF_170531C70D1D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A4F5C81B_ABE3_0B7E_41DF_170531C70D1D, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_A4F5C81B_ABE3_0B7E_41DF_170531C70D1D",
+ "class": "PlayList"
 },
 {
  "class": "PanoramaCamera",

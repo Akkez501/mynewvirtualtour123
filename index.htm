@@ -3,18 +3,18 @@
 <head>
     <title>Untitled 3</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=0.84, width=device-width, viewport-fit=cover" />
-    <link rel="preload" href="script.js?v=1750495168768" as="script"/>
-<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/l/3/0_0.jpg?v=1750495168768" as="image"/>
-<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/r/3/0_0.jpg?v=1750495168768" as="image"/>
-<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/u/3/0_0.jpg?v=1750495168768" as="image"/>
-<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/d/3/0_0.jpg?v=1750495168768" as="image"/>
-<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/f/3/0_0.jpg?v=1750495168768" as="image"/>
-<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/b/3/0_0.jpg?v=1750495168768" as="image"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=0.58, width=device-width, viewport-fit=cover" />
+    <link rel="preload" href="script.js?v=1750929924238" as="script"/>
+<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/l/3/0_0.jpg?v=1750929924238" as="image"/>
+<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/r/3/0_0.jpg?v=1750929924238" as="image"/>
+<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/u/3/0_0.jpg?v=1750929924238" as="image"/>
+<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/d/3/0_0.jpg?v=1750929924238" as="image"/>
+<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/f/3/0_0.jpg?v=1750929924238" as="image"/>
+<link rel="preload" href="media/panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_0/b/3/0_0.jpg?v=1750929924238" as="image"/>
 <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-116087-3", "auto"); ga("send", "pageview");</script>
 <meta name="description" content="Virtual Tour"/>
 <meta name="theme-color" content="#000000"/>
-    <script src="lib/tdvplayer.js?v=1750495168768"></script>
+    <script src="lib/tdvplayer.js?v=1750929924238"></script>
     <script type="text/javascript">
         var player;
         var playersPlayingTmp = [];
@@ -50,12 +50,12 @@
             };
 
             var settings = new TDV.PlayerSettings();
-            settings.set(TDV.PlayerSettings.ACTIVE_VIDEO_ELEMENT, document.getElementById("video_90C03AEB_8241_D632_41BC_6B8C88D4A631"));
+            settings.set(TDV.PlayerSettings.ACTIVE_VIDEO_ELEMENT, document.getElementById("video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8"));
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
-            settings.set(TDV.PlayerSettings.SCRIPT_URL, 'script.js?v=1750495168768');
-            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1750495168768');
-            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1750495168768');
-            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1750495168768');
+            settings.set(TDV.PlayerSettings.SCRIPT_URL, 'script.js?v=1750929924238');
+            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1750929924238');
+            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1750929924238');
+            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1750929924238');
             window.tdvplayer = player = TDV.PlayerAPI.create(settings);
             player.bind('preloadMediaShow', beginFunc, player, true);
             player.bind('stateChange', beginFunc, player, true);
@@ -204,7 +204,7 @@
 
             function hide()
             {
-                document.getElementById("video_90C03AEB_8241_D632_41BC_6B8C88D4A631").pause();
+                document.getElementById("video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8").pause();
                 preloadContainer.style.visibility = 'hidden';
                 preloadContainer.style.display = 'none';
             }
@@ -280,7 +280,7 @@
                 return;
             }
 
-            playVideo(document.getElementById("video_90C03AEB_8241_D632_41BC_6B8C88D4A631"));
+            playVideo(document.getElementById("video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8"));
 document.body.addEventListener("click", onBodyClick);
 document.body.addEventListener("touchend", onBodyClick);
 showPreloader()
@@ -342,7 +342,7 @@ showPreloader()
     
 </head>
 <body onload="onLoad()">
-    <div id="preloadContainer" style="background-color:rgba(0,0,0,1)"><div style="z-index: 4; position: absolute; display: flex; align-items: center; text-align: center; overflow: hidden; background-color: #000000; left: 0%; top: 0%; width: 100.00%; height: 100.00%"><video id="video_90C03AEB_8241_D632_41BC_6B8C88D4A631" width="100%" height="100%" loop autoplay playsinline webkit-playsinline poster="media/video_90C03AEB_8241_D632_41BC_6B8C88D4A631_poster.jpg" preload="auto"><source src="media/video_90C03AEB_8241_D632_41BC_6B8C88D4A631.mp4" type="video/mp4">Your browser does not support the video tab</video></div><div style="z-index: 5; position: absolute; background-image: url('loading/HTMLImage_9056F78F_8247_5EF2_41D9_A7BDEEC16914.png'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 20.33%; top: 19.89%; width: 57.39%; height: 62.01%"></div></div>
+    <div id="preloadContainer" style="background-color:rgba(0,0,0,1)"><div style="z-index: 4; position: absolute; display: flex; align-items: center; text-align: center; overflow: hidden; right: 13.553113553113565%; top: 0%; width: 65.93%; height: 100.00%"><video id="video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8" width="100%" height="100%" loop autoplay playsinline webkit-playsinline poster="media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8_poster.jpg" preload="auto"><source src="media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8.mp4" type="video/mp4">Your browser does not support the video tab</video></div></div>
     <div id="viewer"></div>
 </body>
 </html>

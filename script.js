@@ -1,17 +1,20 @@
 (function(){
     var script = {
  "definitions": [{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A54DCE6E_ABA1_07D6_41B2_2B40F734545F, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A54DCE6E_ABA1_07D6_41B2_2B40F734545F, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_A54DCE6E_ABA1_07D6_41B2_2B40F734545F",
- "class": "PlayList"
+ "label": "Colorful Playful Memphis Bold Happy Bithday Video Message",
+ "id": "video_A4D15DF4_ABA1_04C9_41A4_8DD26B574384",
+ "thumbnailUrl": "media/video_A4D15DF4_ABA1_04C9_41A4_8DD26B574384_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "scaleMode": "fit_inside",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_A4D15DF4_ABA1_04C9_41A4_8DD26B574384.mp4"
+ }
 },
 {
  "class": "PanoramaCamera",
@@ -351,6 +354,19 @@
  "class": "Panorama"
 },
 {
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BBE7D87D_ABA1_0BBA_41CA_BA016C234988, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BBE7D87D_ABA1_0BBA_41CA_BA016C234988, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_BBE7D87D_ABA1_0BBA_41CA_BA016C234988",
+ "class": "PlayList"
+},
+{
  "duration": 5000,
  "label": "2 (2)",
  "id": "album_8E78E72C_81C0_FE36_41BE_F709541CA1EF_1",
@@ -367,22 +383,6 @@
  },
  "class": "Photo",
  "height": 300
-},
-{
- "label": "Black and Blue Simple Happy Birthday Instagram Story",
- "id": "video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8",
- "thumbnailUrl": "media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8_t.jpg",
- "width": 1080,
- "loop": false,
- "scaleMode": "fit_inside",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8.mp4"
- }
 },
 {
  "label": "Flying Hearts Green Screen Effects",
@@ -432,7 +432,14 @@
   {
    "media": "this.video_A69891E7_ABA7_1CD5_41E1_E17D14E93E43",
    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 4, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 4)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 4, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 4, 5)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  },
+  {
+   "media": "this.video_A4E7FCCC_ABA1_04DA_41D2_D47B2A682E1F",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 5, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 5)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 5, 0)",
    "player": "this.MainViewerVideoPlayer",
    "end": "this.trigger('tourEnded')",
    "class": "VideoPlayListItem"
@@ -753,6 +760,22 @@
  }
 },
 {
+ "label": "Colorful Playful Memphis Bold Happy Bithday Video Message",
+ "id": "video_A4E7FCCC_ABA1_04DA_41D2_D47B2A682E1F",
+ "thumbnailUrl": "media/video_A4E7FCCC_ABA1_04DA_41D2_D47B2A682E1F_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "scaleMode": "fit_inside",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_A4E7FCCC_ABA1_04DA_41D2_D47B2A682E1F.mp4"
+ }
+},
+{
  "viewerArea": "this.MainViewer",
  "id": "MainViewerVideoPlayer",
  "class": "VideoPlayer",
@@ -809,14 +832,14 @@
 {
  "items": [
   {
-   "media": "this.video_A633CCC9_ABA7_04DA_41D5_9F7C3D98B9D8",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A54C3E6F_ABA1_07D6_41D4_73DAB261A5D3, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A54C3E6F_ABA1_07D6_41D4_73DAB261A5D3, 0)",
+   "media": "this.video_A4D15DF4_ABA1_04C9_41A4_8DD26B574384",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BBE7987D_ABA1_0BBA_41BC_AD3FADF4A38A, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BBE7987D_ABA1_0BBA_41BC_AD3FADF4A38A, 0)",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer",
    "class": "VideoPlayListItem"
   }
  ],
- "id": "playList_A54C3E6F_ABA1_07D6_41D4_73DAB261A5D3",
+ "id": "playList_BBE7987D_ABA1_0BBA_41BC_AD3FADF4A38A",
  "class": "PlayList"
 },
 {

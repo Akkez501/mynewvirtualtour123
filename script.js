@@ -43,19 +43,6 @@
  "to": "left"
 },
 {
- "autoplay": true,
- "audio": {
-  "mp3Url": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.mp3",
-  "oggUrl": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.ogg",
-  "class": "AudioResource"
- },
- "class": "MediaAudio",
- "id": "audio_9732853A_B1FD_247F_41D8_39F61889E37C",
- "data": {
-  "label": "clapping"
- }
-},
-{
  "from": "left",
  "id": "effect_A342B353_B256_ACB4_41E6_23702D35E829",
  "easing": "linear",
@@ -127,16 +114,26 @@
  }
 },
 {
+ "autoplay": true,
+ "loop": true,
+ "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
+ "class": "PanoramaAudio",
+ "id": "audio_A7354570_B1F8_E618_41E1_A4567DCC8CA8",
+ "data": {
+  "label": "Happy_Birthday_Bouncy"
+ }
+},
+{
  "items": [
   {
    "media": "this.video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A7123ECD_B24D_95AF_41DB_031A6017E3C5, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A7123ECD_B24D_95AF_41DB_031A6017E3C5, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A46609EC_B277_9F6C_41DA_3EE7350B2D9A, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A46609EC_B277_9F6C_41DA_3EE7350B2D9A, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_A7123ECD_B24D_95AF_41DB_031A6017E3C5",
+ "id": "playList_A46609EC_B277_9F6C_41DA_3EE7350B2D9A",
  "class": "PlayList"
 },
 {
@@ -180,14 +177,41 @@
  "to": "right"
 },
 {
- "autoplay": true,
- "loop": true,
- "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
- "class": "PanoramaAudio",
- "id": "audio_A7354570_B1F8_E618_41E1_A4567DCC8CA8",
- "data": {
-  "label": "Happy_Birthday_Bouncy"
- }
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A46659E7_B277_9F9C_41C2_90F651387AED, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A46659E7_B277_9F9C_41C2_90F651387AED, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_A46659E7_B277_9F9C_41C2_90F651387AED",
+ "class": "PlayList"
+},
+{
+ "from": "right",
+ "id": "effect_A33B199A_B256_9FB4_41AF_F3856D621D6F",
+ "easing": "linear",
+ "class": "SlideInEffect",
+ "duration": 1000
+},
+{
+ "from": "top",
+ "id": "effect_BDB837B9_B255_B3F7_41D9_4ECB796D17A2",
+ "easing": "linear",
+ "class": "SlideInEffect",
+ "duration": 1000
+},
+{
+ "gyroscopeEnabled": true,
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
@@ -206,41 +230,17 @@
  }
 },
 {
- "from": "right",
- "id": "effect_A33B199A_B256_9FB4_41AF_F3856D621D6F",
- "easing": "linear",
- "class": "SlideInEffect",
- "duration": 1000
-},
-{
- "gyroscopeEnabled": true,
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
-},
-{
- "from": "top",
- "id": "effect_BDB837B9_B255_B3F7_41D9_4ECB796D17A2",
- "easing": "linear",
- "class": "SlideInEffect",
- "duration": 1000
-},
-{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A712CECD_B24D_95AF_41C3_62358FD188DC, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A712CECD_B24D_95AF_41C3_62358FD188DC, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_A712CECD_B24D_95AF_41C3_62358FD188DC",
- "class": "PlayList"
+ "autoplay": true,
+ "audio": {
+  "mp3Url": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.mp3",
+  "oggUrl": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.ogg",
+  "class": "AudioResource"
+ },
+ "class": "MediaAudio",
+ "id": "audio_9732853A_B1FD_247F_41D8_39F61889E37C",
+ "data": {
+  "label": "clapping"
+ }
 },
 {
  "hfovMin": "120%",
@@ -1190,7 +1190,7 @@
  "horizontalAlign": "center",
  "shadow": false,
  "borderSize": 0,
- "right": "25.82%",
+ "right": "18.46%",
  "transparencyActive": false,
  "minWidth": 1,
  "maxWidth": 601,

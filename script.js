@@ -1,55 +1,18 @@
 (function(){
     var script = {
  "definitions": [{
- "items": [
-  {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_94AF4B29_B1BF_2C1D_41E1_488D422D108E, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_94AF4B29_B1BF_2C1D_41E1_488D422D108E, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_94AF4B29_B1BF_2C1D_41E1_488D422D108E",
- "class": "PlayList"
-},
-{
- "label": "Flying Hearts Green Screen Effects",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
- "width": 1920,
- "loop": false,
- "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
- "class": "Video",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "class": "VideoResource",
-  "height": 1080,
-  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
+ "autoplay": true,
+ "loop": true,
+ "audio": {
+  "mp3Url": "media/audio_99745F54_B183_E40B_41A4_B08FEC3056B9.mp3",
+  "oggUrl": "media/audio_99745F54_B183_E40B_41A4_B08FEC3056B9.ogg",
+  "class": "AudioResource"
+ },
+ "class": "PanoramaAudio",
+ "id": "audio_99745F54_B183_E40B_41A4_B08FEC3056B9",
+ "data": {
+  "label": "Happy_Birthday_Bouncy"
  }
-},
-{
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
-},
-{
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
 },
 {
  "displayOriginPosition": {
@@ -107,8 +70,108 @@
  }
 },
 {
- "hfovMax": 130,
- "hfovMin": "126%",
+ "items": [
+  {
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_9796C454_B185_240B_41C6_AA3A46855D39, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_9796C454_B185_240B_41C6_AA3A46855D39, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_9796C454_B185_240B_41C6_AA3A46855D39",
+ "class": "PlayList"
+},
+{
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
+},
+{
+ "label": "Flying Hearts Green Screen Effects",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
+ }
+},
+{
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
+},
+{
+ "autoplay": true,
+ "audio": {
+  "mp3Url": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.mp3",
+  "oggUrl": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.ogg",
+  "class": "AudioResource"
+ },
+ "class": "MediaAudio",
+ "id": "audio_9732853A_B1FD_247F_41D8_39F61889E37C",
+ "data": {
+  "label": "clapping"
+ }
+},
+{
+ "items": [
+  {
+   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera"
+  },
+  {
+   "media": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3",
+   "camera": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "end": "this.trigger('tourEnded')"
+  }
+ ],
+ "id": "mainPlayList",
+ "class": "PlayList"
+},
+{
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_97962454_B185_240B_41B4_895AFF9191F0, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_97962454_B185_240B_41B4_895AFF9191F0, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_97962454_B185_240B_41B4_895AFF9191F0",
+ "class": "PlayList"
+},
+{
+ "hfovMax": 100,
  "frames": [
   {
    "front": {
@@ -389,21 +452,11 @@
  "pitch": 0
 },
 {
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_94AF2B29_B1BF_2C1D_41C0_07F9286A4BB1, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_94AF2B29_B1BF_2C1D_41C0_07F9286A4BB1, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_94AF2B29_B1BF_2C1D_41C0_07F9286A4BB1",
- "class": "PlayList"
-},
-{
  "hfovMax": 130,
  "hfovMin": "120%",
+ "audios": [
+  "this.audio_99745F54_B183_E40B_41A4_B08FEC3056B9"
+ ],
  "frames": [
   {
    "front": {
@@ -684,34 +737,19 @@
  "pitch": 0
 },
 {
- "items": [
-  {
-   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera"
-  },
-  {
-   "media": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3",
-   "camera": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "end": "this.trigger('tourEnded')"
-  }
- ],
- "id": "mainPlayList",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
 },
 {
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
-  "hfov": 125,
-  "yaw": -47.79,
+  "hfov": 100,
+  "yaw": -46.48,
   "class": "PanoramaCameraPosition",
-  "pitch": 7.89
+  "pitch": -5.95
  },
  "id": "panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
  "initialSequence": {
@@ -738,15 +776,6 @@
   ],
   "class": "PanoramaCameraSequence"
  }
-},
-{
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
 },
 {
  "playbackBarHeadOpacity": 1,
@@ -978,7 +1007,7 @@
  "paddingLeft": 0,
  "mode": "push",
  "height": 120,
- "click": "this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, true, 0, null, null, false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 3000, null, 'hideEffect', false)",
+ "click": "this.playGlobalAudio(this.audio_9732853A_B1FD_247F_41D8_39F61889E37C); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, true, 0, null, null, false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 4000, null, 'hideEffect', false)",
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,
@@ -1093,6 +1122,34 @@
  }
 },
 {
+ "id": "Image_94268F18_B185_643B_41DE_AC77F213B79F",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "25.392%",
+ "shadow": false,
+ "borderSize": 0,
+ "right": "30.52%",
+ "url": "skin/Image_94268F18_B185_643B_41DE_AC77F213B79F.gif",
+ "minWidth": 1,
+ "maxWidth": 1460,
+ "maxHeight": 821,
+ "bottom": "7.5%",
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "14.774%",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "propagateClick": false,
+ "data": {
+  "name": "Image23189"
+ }
+},
+{
  "backgroundColorRatios": [
   0
  ],
@@ -1137,7 +1194,8 @@
   "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
   "this.Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B",
   "this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E",
-  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E"
+  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
+  "this.Image_94268F18_B185_643B_41DE_AC77F213B79F"
  ],
  "layout": "absolute",
  "id": "rootPlayer",

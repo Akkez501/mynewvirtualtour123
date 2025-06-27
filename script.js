@@ -1,48 +1,17 @@
 (function(){
     var script = {
  "definitions": [{
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
-},
-{
- "id": "effect_A3CCA89A_B09F_2C3C_41D8_6DF1ED8E8A9F",
- "easing": "linear",
- "class": "FadeInEffect",
- "duration": 0
-},
-{
- "label": "Flying Hearts Green Screen Effects",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
- "width": 1920,
- "loop": false,
- "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
- "class": "Video",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "class": "VideoResource",
-  "height": 1080,
-  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
- }
-},
-{
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
+ "items": [
+  {
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_9245DDEB_B187_241C_41C3_3B9630D4F98B, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_9245DDEB_B187_241C_41C3_3B9630D4F98B, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_9245DDEB_B187_241C_41C3_3B9630D4F98B",
+ "class": "PlayList"
 },
 {
  "displayOriginPosition": {
@@ -100,26 +69,358 @@
  }
 },
 {
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
+ "id": "effect_A50A1CB8_B082_E47B_41E5_76DF5DB751A2",
+ "easing": "linear",
+ "class": "FadeInEffect",
+ "duration": 0
+},
+{
+ "label": "Flying Hearts Green Screen Effects",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
+ }
+},
+{
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
 },
 {
  "items": [
   {
    "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A56EC39F_B08D_3C34_41D5_CDD182DAA69B, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A56EC39F_B08D_3C34_41D5_CDD182DAA69B, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_9245BDEB_B187_241C_41CB_B357E5427697, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_9245BDEB_B187_241C_41CB_B357E5427697, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_A56EC39F_B08D_3C34_41D5_CDD182DAA69B",
+ "id": "playList_9245BDEB_B187_241C_41CB_B357E5427697",
  "class": "PlayList"
+},
+{
+ "items": [
+  {
+   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera"
+  },
+  {
+   "media": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3",
+   "camera": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "end": "this.trigger('tourEnded')"
+  }
+ ],
+ "id": "mainPlayList",
+ "class": "PlayList"
+},
+{
+ "hfovMax": 130,
+ "hfovMin": "126%",
+ "frames": [
+  {
+   "front": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/f/0/{row}_{column}.jpg",
+      "rowCount": 6,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 3072,
+      "colCount": 6,
+      "height": 3072
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/f/1/{row}_{column}.jpg",
+      "rowCount": 3,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1536,
+      "colCount": 3,
+      "height": 1536
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/f/2/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/f/3/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "top": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/u/0/{row}_{column}.jpg",
+      "rowCount": 6,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 3072,
+      "colCount": 6,
+      "height": 3072
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/u/1/{row}_{column}.jpg",
+      "rowCount": 3,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1536,
+      "colCount": 3,
+      "height": 1536
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/u/2/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/u/3/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "class": "CubicPanoramaFrame",
+   "back": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/b/0/{row}_{column}.jpg",
+      "rowCount": 6,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 3072,
+      "colCount": 6,
+      "height": 3072
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/b/1/{row}_{column}.jpg",
+      "rowCount": 3,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1536,
+      "colCount": 3,
+      "height": 1536
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/b/2/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/b/3/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "bottom": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/d/0/{row}_{column}.jpg",
+      "rowCount": 6,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 3072,
+      "colCount": 6,
+      "height": 3072
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/d/1/{row}_{column}.jpg",
+      "rowCount": 3,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1536,
+      "colCount": 3,
+      "height": 1536
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/d/2/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/d/3/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "left": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/l/0/{row}_{column}.jpg",
+      "rowCount": 6,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 3072,
+      "colCount": 6,
+      "height": 3072
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/l/1/{row}_{column}.jpg",
+      "rowCount": 3,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1536,
+      "colCount": 3,
+      "height": 1536
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/l/2/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/l/3/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   },
+   "thumbnailUrl": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_t.jpg",
+   "right": {
+    "class": "ImageResource",
+    "levels": [
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/r/0/{row}_{column}.jpg",
+      "rowCount": 6,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 3072,
+      "colCount": 6,
+      "height": 3072
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/r/1/{row}_{column}.jpg",
+      "rowCount": 3,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1536,
+      "colCount": 3,
+      "height": 1536
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/r/2/{row}_{column}.jpg",
+      "rowCount": 2,
+      "class": "TiledImageResourceLevel",
+      "tags": "ondemand",
+      "width": 1024,
+      "colCount": 2,
+      "height": 1024
+     },
+     {
+      "url": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_0/r/3/{row}_{column}.jpg",
+      "rowCount": 1,
+      "class": "TiledImageResourceLevel",
+      "tags": [
+       "ondemand",
+       "preload"
+      ],
+      "width": 512,
+      "colCount": 1,
+      "height": 512
+     }
+    ]
+   }
+  }
+ ],
+ "vfov": 180,
+ "hfov": 360,
+ "label": "M3_Maximalism_Render_equirectangular-png_Party_hall_for_birthday_1186968755_13965680",
+ "id": "panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3",
+ "thumbnailUrl": "media/panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_t.jpg",
+ "partial": false,
+ "class": "Panorama",
+ "pitch": 0
 },
 {
  "hfovMax": 130,
@@ -404,36 +705,54 @@
  "pitch": 0
 },
 {
- "items": [
-  {
-   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
-   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
-   "class": "PanoramaPlayListItem",
-   "player": "this.MainViewerPanoramaPlayer",
-   "end": "this.trigger('tourEnded')"
-  }
- ],
- "id": "mainPlayList",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
 },
 {
- "items": [
-  {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A56E139F_B08D_3C34_41DB_686D8B107B46, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A56E139F_B08D_3C34_41DB_686D8B107B46, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_A56E139F_B08D_3C34_41DB_686D8B107B46",
- "class": "PlayList"
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "hfov": 125,
+  "yaw": -47.79,
+  "class": "PanoramaCameraPosition",
+  "pitch": 7.89
+ },
+ "id": "panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ],
+  "class": "PanoramaCameraSequence"
+ }
 },
 {
- "id": "effect_A268CD20_B086_E40B_41CC_187755E7180C",
- "easing": "linear",
- "class": "FadeOutEffect",
- "duration": 0
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "playbackBarHeadOpacity": 1,
@@ -588,7 +907,7 @@
  }
 },
 {
- "id": "Image_A4A89F75_B086_E4F5_419E_1C3F85DD558A",
+ "id": "Image_A822F6B7_B083_2474_41DB_A99B87E1C695",
  "left": "0%",
  "horizontalAlign": "center",
  "class": "Image",
@@ -596,7 +915,7 @@
  "width": "100%",
  "shadow": false,
  "borderSize": 0,
- "url": "skin/Image_A4A89F75_B086_E4F5_419E_1C3F85DD558A.png",
+ "url": "skin/Image_A822F6B7_B083_2474_41DB_A99B87E1C695.png",
  "minWidth": 1,
  "maxWidth": 1920,
  "top": "0%",
@@ -612,67 +931,7 @@
  "scaleMode": "fit_inside",
  "propagateClick": false,
  "data": {
-  "name": "Image10251"
- }
-},
-{
- "width": 40,
- "id": "IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9",
- "class": "IconButton",
- "minHeight": 0,
- "horizontalAlign": "center",
- "shadow": false,
- "borderSize": 0,
- "right": "4.28%",
- "transparencyActive": true,
- "minWidth": 0,
- "iconURL": "skin/IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9.png",
- "verticalAlign": "middle",
- "paddingRight": 0,
- "paddingLeft": 0,
- "mode": "push",
- "height": 40,
- "top": "5.07%",
- "click": "this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, this.effect_A268CD20_B086_E40B_41CC_187755E7180C, 'hideEffect', false)",
- "paddingTop": 0,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "paddingBottom": 0,
- "rollOverIconURL": "skin/IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9_rollover.png",
- "pressedIconURL": "skin/IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9_pressed.png",
- "cursor": "hand",
- "propagateClick": false,
- "data": {
-  "name": "Button11549"
- }
-},
-{
- "id": "Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
- "horizontalAlign": "center",
- "class": "Image",
- "minHeight": 1,
- "width": "11.821%",
- "shadow": false,
- "borderSize": 0,
- "right": "9.89%",
- "url": "skin/Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E.gif",
- "minWidth": 1,
- "maxWidth": 821,
- "top": "12.67%",
- "maxHeight": 1460,
- "verticalAlign": "middle",
- "paddingRight": 0,
- "paddingLeft": 0,
- "height": "21.83%",
- "click": "this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, true, 0, this.effect_A3CCA89A_B09F_2C3C_41D8_6DF1ED8E8A9F, 'showEffect', false)",
- "paddingTop": 0,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "paddingBottom": 0,
- "scaleMode": "fit_inside",
- "propagateClick": false,
- "data": {
-  "name": "Image7149"
+  "name": "Image13260"
  }
 },
 {
@@ -684,13 +943,13 @@
  "horizontalAlign": "center",
  "shadow": false,
  "borderSize": 0,
- "right": "41%",
+ "right": "40%",
  "transparencyActive": false,
  "minWidth": 1,
  "maxWidth": 1000,
  "iconURL": "skin/IconButton_906940FE_81C0_D212_41CB_D8E2E633544C.png",
  "maxHeight": 1000,
- "bottom": "20.29%",
+ "bottom": "18.09%",
  "verticalAlign": "middle",
  "paddingRight": 0,
  "paddingLeft": 0,
@@ -705,6 +964,109 @@
  "data": {
   "name": "IconButton12437"
  }
+},
+{
+ "id": "Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "19.361%",
+ "shadow": false,
+ "borderSize": 0,
+ "right": "11.46%",
+ "url": "skin/Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E.gif",
+ "minWidth": 1,
+ "maxWidth": 821,
+ "top": "12.02%",
+ "maxHeight": 1460,
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "38.258%",
+ "click": "this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, true, 0, this.effect_A50A1CB8_B082_E47B_41E5_76DF5DB751A2, 'showEffect', false); this.mainPlayList.set('selectedIndex', 1)",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "propagateClick": false,
+ "data": {
+  "name": "Image7149"
+ }
+},
+{
+ "id": "Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "23.16%",
+ "shadow": false,
+ "borderSize": 0,
+ "right": "9.65%",
+ "url": "skin/Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B.png",
+ "minWidth": 1,
+ "maxWidth": 500,
+ "top": "27.45%",
+ "maxHeight": 500,
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "31.092%",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "propagateClick": false,
+ "data": {
+  "name": "Image14189"
+ }
+},
+{
+ "backgroundColorRatios": [
+  0,
+  1
+ ],
+ "data": {
+  "name": "Location"
+ },
+ "children": [
+  "this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F"
+ ],
+ "layout": "absolute",
+ "id": "Container_A579232D_B09D_1C14_41B9_7977AD6AC66E",
+ "left": "0%",
+ "scrollBarOpacity": 0.5,
+ "scrollBarColor": "#000000",
+ "class": "Container",
+ "minHeight": 1,
+ "horizontalAlign": "left",
+ "shadow": false,
+ "backgroundColorDirection": "vertical",
+ "scrollBarVisible": "rollOver",
+ "borderSize": 0,
+ "minWidth": 1,
+ "width": "100%",
+ "scrollBarMargin": 2,
+ "contentOpaque": false,
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "verticalAlign": "top",
+ "backgroundColor": [
+  "#FFFFFF",
+  "#FFFFFF"
+ ],
+ "top": "0%",
+ "height": "100%",
+ "paddingTop": 0,
+ "backgroundOpacity": 0.3,
+ "borderRadius": 0,
+ "gap": 10,
+ "paddingBottom": 0,
+ "visible": false,
+ "scrollBarWidth": 10,
+ "propagateClick": false,
+ "overflow": "scroll"
 },
 {
  "backgroundColorRatios": [
@@ -746,11 +1108,11 @@
  "children": [
   "this.MainViewer",
   "this.Image_A108EEB5_B08D_2474_4185_95EF6A5A251F",
-  "this.Image_A4A89F75_B086_E4F5_419E_1C3F85DD558A",
-  "this.IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9",
-  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
+  "this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695",
   "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
-  "this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F"
+  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
+  "this.Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B",
+  "this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E"
  ],
  "layout": "absolute",
  "id": "rootPlayer",

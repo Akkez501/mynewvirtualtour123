@@ -1,19 +1,6 @@
 (function(){
     var script = {
  "definitions": [{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BDEF9FA8_B087_241C_41E4_E98A710B58E9, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BDEF9FA8_B087_241C_41E4_E98A710B58E9, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_BDEF9FA8_B087_241C_41E4_E98A710B58E9",
- "class": "PlayList"
-},
-{
  "hfovMax": 130,
  "hfovMin": "120%",
  "frames": [
@@ -296,20 +283,10 @@
  "pitch": 0
 },
 {
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
 },
 {
  "displayOriginPosition": {
@@ -367,6 +344,22 @@
  }
 },
 {
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
+},
+{
  "label": "Flying Hearts Green Screen Effects",
  "scaleMode": "fit_inside",
  "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
@@ -398,21 +391,28 @@
 {
  "items": [
   {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BDEFBFA8_B087_241C_41E3_97A9CE7FEBCB, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BDEFBFA8_B087_241C_41E3_97A9CE7FEBCB, 0)",
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BD7A589D_B085_2C35_41C9_540B7FFBA10D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BD7A589D_B085_2C35_41C9_540B7FFBA10D, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_BDEFBFA8_B087_241C_41E3_97A9CE7FEBCB",
+ "id": "playList_BD7A589D_B085_2C35_41C9_540B7FFBA10D",
  "class": "PlayList"
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
+ "items": [
+  {
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BD7B889D_B085_2C35_41B0_0DC0B1008999, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BD7B889D_B085_2C35_41B0_0DC0B1008999, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_BD7B889D_B085_2C35_41B0_0DC0B1008999",
+ "class": "PlayList"
 },
 {
  "viewerArea": "this.MainViewer",
@@ -581,13 +581,13 @@
 },
 {
  "id": "Image_BD77737C_B085_FCFB_41E1_A42087A4C948",
- "horizontalAlign": "center",
+ "left": "0%",
+ "width": 1920,
  "class": "Image",
  "minHeight": 1,
- "width": "99.94%",
+ "horizontalAlign": "center",
  "shadow": false,
  "borderSize": 0,
- "right": "0%",
  "url": "skin/Image_BD77737C_B085_FCFB_41E1_A42087A4C948.gif",
  "minWidth": 1,
  "maxWidth": 1920,
@@ -596,7 +596,7 @@
  "verticalAlign": "middle",
  "paddingRight": 0,
  "paddingLeft": 0,
- "height": "100%",
+ "height": 1080,
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,

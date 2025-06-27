@@ -1,6 +1,19 @@
 (function(){
     var script = {
  "definitions": [{
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BE13FF7F_B061_18BA_41E3_F7367AA9BA46, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BE13FF7F_B061_18BA_41E3_F7367AA9BA46, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_BE13FF7F_B061_18BA_41E3_F7367AA9BA46",
+ "class": "PlayList"
+},
+{
  "hfovMax": 130,
  "hfovMin": "120%",
  "frames": [
@@ -283,32 +296,6 @@
  "class": "Panorama"
 },
 {
- "items": [
-  {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BE46E2D4_B063_69CF_41D5_FA32706E22D2, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BE46E2D4_B063_69CF_41D5_FA32706E22D2, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_BE46E2D4_B063_69CF_41D5_FA32706E22D2",
- "class": "PlayList"
-},
-{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BE46C2D4_B063_69CF_4191_A9D2EA5A18EA, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BE46C2D4_B063_69CF_4191_A9D2EA5A18EA, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer",
-   "class": "VideoPlayListItem"
-  }
- ],
- "id": "playList_BE46C2D4_B063_69CF_4191_A9D2EA5A18EA",
- "class": "PlayList"
-},
-{
  "displayOriginPosition": {
   "hfov": 165,
   "stereographicFactor": 1,
@@ -387,6 +374,19 @@
   "height": 1920,
   "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
  }
+},
+{
+ "items": [
+  {
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BE102F7F_B061_18BA_41E3_9EB57F56A95A, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BE102F7F_B061_18BA_41E3_9EB57F56A95A, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer",
+   "class": "VideoPlayListItem"
+  }
+ ],
+ "id": "playList_BE102F7F_B061_18BA_41E3_9EB57F56A95A",
+ "class": "PlayList"
 },
 {
  "items": [
@@ -601,7 +601,7 @@
  "backgroundOpacity": 0,
  "borderRadius": 0,
  "paddingBottom": 0,
- "scaleMode": "fit_outside",
+ "scaleMode": "fill",
  "propagateClick": false,
  "data": {
   "name": "Image10517"
@@ -687,7 +687,7 @@
  "backgroundOpacity": 0,
  "borderRadius": 0,
  "paddingBottom": 0,
- "scaleMode": "fit_outside",
+ "scaleMode": "fill",
  "propagateClick": false,
  "data": {
   "name": "Image8287"

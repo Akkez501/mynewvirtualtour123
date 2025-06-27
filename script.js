@@ -36,17 +36,10 @@
  }
 },
 {
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AA0C943D_B27D_F4EF_41DA_7ADBF6F58EE4, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AA0C943D_B27D_F4EF_41DA_7ADBF6F58EE4, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_AA0C943D_B27D_F4EF_41DA_7ADBF6F58EE4",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
 },
 {
  "from": "left",
@@ -56,18 +49,17 @@
  "duration": 2000
 },
 {
- "from": "right",
- "id": "effect_A33B199A_B256_9FB4_41AF_F3856D621D6F",
- "easing": "linear",
- "class": "SlideInEffect",
- "duration": 1000
-},
-{
- "id": "effect_A2E35CA2_B256_B594_41A5_9DF9A6FE3EF0",
- "easing": "linear",
- "class": "SlideOutEffect",
- "duration": 1000,
- "to": "top"
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_ABA65E93_B24A_B5B4_41E2_2649D1EE7A95, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_ABA65E93_B24A_B5B4_41E2_2649D1EE7A95, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_ABA65E93_B24A_B5B4_41E2_2649D1EE7A95",
+ "class": "PlayList"
 },
 {
  "automaticZoomSpeed": 10,
@@ -127,12 +119,6 @@
  }
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
-},
-{
  "autoplay": true,
  "loop": true,
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -150,10 +136,11 @@
  "to": "left"
 },
 {
- "id": "effect_BC51660E_B24E_94AC_41B1_E6D3B1C35FF1",
+ "from": "top",
+ "id": "effect_BDB837B9_B255_B3F7_41D9_4ECB796D17A2",
  "easing": "linear",
- "class": "FadeInEffect",
- "duration": 6000
+ "class": "SlideInEffect",
+ "duration": 1000
 },
 {
  "items": [
@@ -177,50 +164,54 @@
  "class": "PlayList"
 },
 {
- "id": "effect_A2294B4B_B257_9CAB_41D7_1A7E64D274B4",
+ "id": "effect_A2E35CA2_B256_B594_41A5_9DF9A6FE3EF0",
  "easing": "linear",
  "class": "SlideOutEffect",
  "duration": 1000,
- "to": "right"
-},
-{
- "gyroscopeEnabled": true,
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
-},
-{
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E.mp4"
- }
+ "to": "top"
 },
 {
  "items": [
   {
    "media": "this.video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AA0C443D_B27D_F4EF_41E1_3BFD57ECE864, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AA0C443D_B27D_F4EF_41E1_3BFD57ECE864, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_ABA6EE93_B24A_B5B4_4155_81D8B2B73B6E, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_ABA6EE93_B24A_B5B4_4155_81D8B2B73B6E, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_AA0C443D_B27D_F4EF_41E1_3BFD57ECE864",
+ "id": "playList_ABA6EE93_B24A_B5B4_4155_81D8B2B73B6E",
  "class": "PlayList"
+},
+{
+ "autoplay": true,
+ "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
+ "class": "PanoramaAudio",
+ "id": "audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A",
+ "data": {
+  "label": "Happy_Birthday_Bouncy"
+ }
+},
+{
+ "from": "right",
+ "id": "effect_A5AC7008_B24A_AC95_41D7_376418C60008",
+ "easing": "linear",
+ "class": "SlideInEffect",
+ "duration": 6000
+},
+{
+ "from": "right",
+ "id": "effect_A33B199A_B256_9FB4_41AF_F3856D621D6F",
+ "easing": "linear",
+ "class": "SlideInEffect",
+ "duration": 1000
+},
+{
+ "id": "effect_A2294B4B_B257_9CAB_41D7_1A7E64D274B4",
+ "easing": "linear",
+ "class": "SlideOutEffect",
+ "duration": 1000,
+ "to": "right"
 },
 {
  "label": "Flying Hearts Green Screen Effects",
@@ -239,11 +230,20 @@
  }
 },
 {
- "from": "top",
- "id": "effect_BDB837B9_B255_B3F7_41D9_4ECB796D17A2",
- "easing": "linear",
- "class": "SlideInEffect",
- "duration": 1000
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E.mp4"
+ }
 },
 {
  "autoplay": true,
@@ -829,13 +829,14 @@
  "vfov": 180
 },
 {
- "autoplay": true,
- "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
- "class": "PanoramaAudio",
- "id": "audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A",
- "data": {
-  "label": "Happy_Birthday_Bouncy"
- }
+ "gyroscopeEnabled": true,
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "playbackBarHeadOpacity": 1,
@@ -1184,7 +1185,7 @@
 },
 {
  "id": "IconButton_BE536709_B221_41FA_41E4_8A8EB121B913",
- "width": 166.12,
+ "width": 125.12,
  "class": "IconButton",
  "minHeight": 1,
  "horizontalAlign": "center",
@@ -1201,8 +1202,8 @@
  "paddingRight": 0,
  "paddingLeft": 0,
  "mode": "push",
- "height": 176,
- "click": "this.setComponentVisibility(this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_A4CD735F_B1F8_E208_41DA_67F3F64D6984, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_94268F18_B185_643B_41DE_AC77F213B79F, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_A596F5B4_B1C8_2618_41CA_69FF0FF1BEF4, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.WebFrame_AFC29C67_B258_E639_41E1_ADA9CDC290C6, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.IconButton_BE536709_B221_41FA_41E4_8A8EB121B913, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.mainPlayList.set('selectedIndex', 1); this.setComponentVisibility(this.IconButton_BF0D7571_B23D_9774_41CC_A11309B568DE, true, 0, this.effect_BC51660E_B24E_94AC_41B1_E6D3B1C35FF1, 'showEffect', false); this.setComponentVisibility(this.IconButton_BFDBCF00_B24A_9494_41DC_69234EA96E36, true, 0, this.effect_BC51660E_B24E_94AC_41B1_E6D3B1C35FF1, 'showEffect', false)",
+ "height": 147,
+ "click": "this.setComponentVisibility(this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_A4CD735F_B1F8_E208_41DA_67F3F64D6984, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_94268F18_B185_643B_41DE_AC77F213B79F, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.Image_A596F5B4_B1C8_2618_41CA_69FF0FF1BEF4, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.WebFrame_AFC29C67_B258_E639_41E1_ADA9CDC290C6, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.setComponentVisibility(this.IconButton_BE536709_B221_41FA_41E4_8A8EB121B913, false, 0, this.effect_BEF81196_B221_40E9_41CB_EE8381E26C3C, 'hideEffect', false); this.mainPlayList.set('selectedIndex', 1); this.setComponentVisibility(this.IconButton_BF0D7571_B23D_9774_41CC_A11309B568DE, true, 0, this.effect_A5AC7008_B24A_AC95_41D7_376418C60008, 'showEffect', false); this.setComponentVisibility(this.IconButton_BFDBCF00_B24A_9494_41DC_69234EA96E36, true, 0, this.effect_A5AC7008_B24A_AC95_41D7_376418C60008, 'showEffect', false)",
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,

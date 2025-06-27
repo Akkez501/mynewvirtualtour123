@@ -1,22 +1,124 @@
 (function(){
     var script = {
  "definitions": [{
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
+},
+{
  "id": "effect_A3CCA89A_B09F_2C3C_41D8_6DF1ED8E8A9F",
  "easing": "linear",
  "class": "FadeInEffect",
  "duration": 0
 },
 {
+ "label": "Flying Hearts Green Screen Effects",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
+ }
+},
+{
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
+},
+{
+ "displayOriginPosition": {
+  "hfov": 165,
+  "yaw": -137.57,
+  "stereographicFactor": 1,
+  "class": "RotationalCameraDisplayPosition",
+  "pitch": -90
+ },
+ "automaticZoomSpeed": 10,
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "yaw": -137.57,
+  "class": "PanoramaCameraPosition",
+  "pitch": 4.02
+ },
+ "id": "panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
+ "displayMovements": [
+  {
+   "easing": "linear",
+   "class": "TargetRotationalCameraDisplayMovement",
+   "duration": 1000
+  },
+  {
+   "targetPitch": 4.02,
+   "easing": "cubic_in_out",
+   "targetStereographicFactor": 0,
+   "class": "TargetRotationalCameraDisplayMovement",
+   "duration": 3000
+  }
+ ],
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_in",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 323,
+    "yawSpeed": 7.96,
+    "easing": "linear",
+    "class": "DistancePanoramaCameraMovement"
+   },
+   {
+    "yawDelta": 18.5,
+    "yawSpeed": 7.96,
+    "easing": "cubic_out",
+    "class": "DistancePanoramaCameraMovement"
+   }
+  ],
+  "class": "PanoramaCameraSequence"
+ }
+},
+{
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
+},
+{
  "items": [
   {
    "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A273B1B4_B085_1C74_41BE_87BD0ADCF7F2, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A273B1B4_B085_1C74_41BE_87BD0ADCF7F2, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A56EC39F_B08D_3C34_41D5_CDD182DAA69B, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A56EC39F_B08D_3C34_41D5_CDD182DAA69B, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_A273B1B4_B085_1C74_41BE_87BD0ADCF7F2",
+ "id": "playList_A56EC39F_B08D_3C34_41D5_CDD182DAA69B",
  "class": "PlayList"
 },
 {
@@ -302,99 +404,6 @@
  "pitch": 0
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
-},
-{
- "displayOriginPosition": {
-  "hfov": 165,
-  "yaw": -137.57,
-  "stereographicFactor": 1,
-  "class": "RotationalCameraDisplayPosition",
-  "pitch": -90
- },
- "automaticZoomSpeed": 10,
- "class": "PanoramaCamera",
- "initialPosition": {
-  "yaw": -137.57,
-  "class": "PanoramaCameraPosition",
-  "pitch": 4.02
- },
- "id": "panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera",
- "displayMovements": [
-  {
-   "easing": "linear",
-   "class": "TargetRotationalCameraDisplayMovement",
-   "duration": 1000
-  },
-  {
-   "targetPitch": 4.02,
-   "easing": "cubic_in_out",
-   "targetStereographicFactor": 0,
-   "class": "TargetRotationalCameraDisplayMovement",
-   "duration": 3000
-  }
- ],
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_in",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 323,
-    "yawSpeed": 7.96,
-    "easing": "linear",
-    "class": "DistancePanoramaCameraMovement"
-   },
-   {
-    "yawDelta": 18.5,
-    "yawSpeed": 7.96,
-    "easing": "cubic_out",
-    "class": "DistancePanoramaCameraMovement"
-   }
-  ],
-  "class": "PanoramaCameraSequence"
- }
-},
-{
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
-},
-{
- "label": "Flying Hearts Green Screen Effects",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
- "width": 1920,
- "loop": false,
- "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
- "class": "Video",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "class": "VideoResource",
-  "height": 1080,
-  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
- }
-},
-{
  "items": [
   {
    "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
@@ -408,25 +417,16 @@
  "class": "PlayList"
 },
 {
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
-},
-{
  "items": [
   {
    "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A27381B4_B085_1C74_419A_3E39266F142D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A27381B4_B085_1C74_419A_3E39266F142D, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A56E139F_B08D_3C34_41DB_686D8B107B46, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A56E139F_B08D_3C34_41DB_686D8B107B46, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_A27381B4_B085_1C74_419A_3E39266F142D",
+ "id": "playList_A56E139F_B08D_3C34_41DB_686D8B107B46",
  "class": "PlayList"
 },
 {
@@ -588,70 +588,6 @@
  }
 },
 {
- "cursor": "hand",
- "id": "IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
- "width": 140,
- "class": "IconButton",
- "minHeight": 1,
- "horizontalAlign": "center",
- "shadow": false,
- "borderSize": 0,
- "right": "43%",
- "transparencyActive": false,
- "minWidth": 1,
- "maxWidth": 1000,
- "iconURL": "skin/IconButton_906940FE_81C0_D212_41CB_D8E2E633544C.png",
- "maxHeight": 1000,
- "bottom": "20.29%",
- "verticalAlign": "middle",
- "paddingRight": 0,
- "paddingLeft": 0,
- "mode": "push",
- "height": 120,
- "paddingTop": 0,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "paddingBottom": 0,
- "pressedIconURL": "skin/IconButton_906940FE_81C0_D212_41CB_D8E2E633544C_pressed.png",
- "propagateClick": false,
- "data": {
-  "name": "IconButton12437"
- }
-},
-{
- "backgroundColorRatios": [
-  0
- ],
- "id": "WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F",
- "left": "-0.06%",
- "width": "100%",
- "class": "WebFrame",
- "minHeight": 1,
- "shadow": false,
- "backgroundColorDirection": "vertical",
- "borderSize": 0,
- "scrollEnabled": true,
- "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4222.789817837587!2d76.84427017557775!3d30.666220274616474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f94bdae8e9dfd%3A0xcf3d6252f9cb54b3!2sSekhon%20Banquet!5e1!3m2!1sen!2sin!4v1751018011164!5m2!1sen!2sin",
- "minWidth": 1,
- "paddingRight": 0,
- "paddingLeft": 0,
- "backgroundColor": [
-  "#FFFFFF"
- ],
- "top": "0%",
- "height": "100%",
- "insetBorder": false,
- "paddingTop": 0,
- "backgroundOpacity": 1,
- "borderRadius": 0,
- "paddingBottom": 0,
- "visible": false,
- "propagateClick": false,
- "data": {
-  "name": "WebFrame7856"
- }
-},
-{
  "id": "Image_A4A89F75_B086_E4F5_419E_1C3F85DD558A",
  "left": "0%",
  "horizontalAlign": "center",
@@ -738,6 +674,70 @@
  "data": {
   "name": "Image7149"
  }
+},
+{
+ "cursor": "hand",
+ "id": "IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
+ "width": 140,
+ "class": "IconButton",
+ "minHeight": 1,
+ "horizontalAlign": "center",
+ "shadow": false,
+ "borderSize": 0,
+ "right": "41%",
+ "transparencyActive": false,
+ "minWidth": 1,
+ "maxWidth": 1000,
+ "iconURL": "skin/IconButton_906940FE_81C0_D212_41CB_D8E2E633544C.png",
+ "maxHeight": 1000,
+ "bottom": "20.29%",
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "mode": "push",
+ "height": 120,
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "pressedIconURL": "skin/IconButton_906940FE_81C0_D212_41CB_D8E2E633544C_pressed.png",
+ "propagateClick": false,
+ "data": {
+  "name": "IconButton12437"
+ }
+},
+{
+ "backgroundColorRatios": [
+  0
+ ],
+ "id": "WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F",
+ "left": "0%",
+ "width": "100%",
+ "class": "WebFrame",
+ "minHeight": 1,
+ "shadow": false,
+ "backgroundColorDirection": "vertical",
+ "borderSize": 0,
+ "scrollEnabled": true,
+ "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4222.789817837587!2d76.84427017557775!3d30.666220274616474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f94bdae8e9dfd%3A0xcf3d6252f9cb54b3!2sSekhon%20Banquet!5e1!3m2!1sen!2sin!4v1751018011164!5m2!1sen!2sin",
+ "minWidth": 1,
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "backgroundColor": [
+  "#FFFFFF"
+ ],
+ "top": "0%",
+ "height": "100%",
+ "insetBorder": false,
+ "paddingTop": 0,
+ "backgroundOpacity": 1,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "visible": false,
+ "propagateClick": false,
+ "data": {
+  "name": "WebFrame7856"
+ }
 }],
  "start": "this.init()",
  "data": {
@@ -746,11 +746,11 @@
  "children": [
   "this.MainViewer",
   "this.Image_A108EEB5_B08D_2474_4185_95EF6A5A251F",
-  "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
-  "this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F",
   "this.Image_A4A89F75_B086_E4F5_419E_1C3F85DD558A",
   "this.IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9",
-  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E"
+  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
+  "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
+  "this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F"
  ],
  "layout": "absolute",
  "id": "rootPlayer",

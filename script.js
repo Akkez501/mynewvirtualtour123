@@ -7,6 +7,12 @@
  "duration": 0
 },
 {
+ "id": "effect_A268CD20_B086_E40B_41CC_187755E7180C",
+ "easing": "linear",
+ "class": "FadeOutEffect",
+ "duration": 0
+},
+{
  "hfovMax": 130,
  "hfovMin": "120%",
  "frames": [
@@ -289,33 +295,13 @@
  "pitch": 0
 },
 {
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
-},
-{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A32A4BAD_B09D_2C14_41B0_78715732F0D0, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A32A4BAD_B09D_2C14_41B0_78715732F0D0, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_A32A4BAD_B09D_2C14_41B0_78715732F0D0",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "displayOriginPosition": {
@@ -373,17 +359,10 @@
  }
 },
 {
- "items": [
-  {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A32A7BAD_B09D_2C14_41B4_F7AE5B144148, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A32A7BAD_B09D_2C14_41B4_F7AE5B144148, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_A32A7BAD_B09D_2C14_41B4_F7AE5B144148",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
 },
 {
  "label": "Flying Hearts Green Screen Effects",
@@ -415,19 +394,46 @@
  "class": "PlayList"
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
 },
 {
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A3B31084_B08D_3C14_41CB_4290213905AB, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A3B31084_B08D_3C14_41CB_4290213905AB, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_A3B31084_B08D_3C14_41CB_4290213905AB",
+ "class": "PlayList"
+},
+{
+ "items": [
+  {
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A3B30084_B08D_3C14_41BD_BA10F1801DC7, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A3B30084_B08D_3C14_41BD_BA10F1801DC7, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_A3B30084_B08D_3C14_41BD_BA10F1801DC7",
+ "class": "PlayList"
 },
 {
  "playbackBarHeadOpacity": 1,
@@ -590,7 +596,7 @@
  "horizontalAlign": "center",
  "shadow": false,
  "borderSize": 0,
- "right": "43%",
+ "right": "40%",
  "transparencyActive": false,
  "minWidth": 1,
  "maxWidth": 568,
@@ -617,10 +623,10 @@
  "horizontalAlign": "center",
  "class": "Image",
  "minHeight": 1,
- "width": "9.71%",
+ "width": "11.824%",
  "shadow": false,
  "borderSize": 0,
- "right": "12%",
+ "right": "9.89%",
  "url": "skin/Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E.gif",
  "minWidth": 1,
  "maxWidth": 821,
@@ -629,7 +635,7 @@
  "verticalAlign": "middle",
  "paddingRight": 0,
  "paddingLeft": 0,
- "height": "16.759%",
+ "height": "21.83%",
  "click": "this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, true, 0, this.effect_A3CCA89A_B09F_2C3C_41D8_6DF1ED8E8A9F, 'showEffect', false)",
  "paddingTop": 0,
  "backgroundOpacity": 0,
@@ -673,6 +679,37 @@
  "data": {
   "name": "WebFrame7856"
  }
+},
+{
+ "width": 40,
+ "id": "IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9",
+ "class": "IconButton",
+ "minHeight": 0,
+ "horizontalAlign": "center",
+ "shadow": false,
+ "borderSize": 0,
+ "right": "4.28%",
+ "transparencyActive": true,
+ "minWidth": 0,
+ "iconURL": "skin/IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9.png",
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "mode": "push",
+ "height": 40,
+ "top": "5.07%",
+ "click": "this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, this.effect_A268CD20_B086_E40B_41CC_187755E7180C, 'hideEffect', false)",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "rollOverIconURL": "skin/IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9_rollover.png",
+ "pressedIconURL": "skin/IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9_pressed.png",
+ "cursor": "hand",
+ "propagateClick": false,
+ "data": {
+  "name": "Button11549"
+ }
 }],
  "start": "this.init()",
  "data": {
@@ -683,7 +720,8 @@
   "this.Image_A108EEB5_B08D_2474_4185_95EF6A5A251F",
   "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
   "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
-  "this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F"
+  "this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F",
+  "this.IconButton_A2A925CE_B087_E414_41B5_FA25AAED90B9"
  ],
  "layout": "absolute",
  "id": "rootPlayer",

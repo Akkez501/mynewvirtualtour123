@@ -1,17 +1,42 @@
 (function(){
     var script = {
  "definitions": [{
- "items": [
-  {
-   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_9245DDEB_B187_241C_41C3_3B9630D4F98B, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_9245DDEB_B187_241C_41C3_3B9630D4F98B, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_9245DDEB_B187_241C_41C3_3B9630D4F98B",
- "class": "PlayList"
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
+},
+{
+ "label": "Flying Hearts Green Screen Effects",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
+ "width": 1920,
+ "loop": false,
+ "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+ "class": "Video",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "class": "VideoResource",
+  "height": 1080,
+  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
+ }
+},
+{
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
 },
 {
  "displayOriginPosition": {
@@ -69,75 +94,16 @@
  }
 },
 {
- "id": "effect_A50A1CB8_B082_E47B_41E5_76DF5DB751A2",
- "easing": "linear",
- "class": "FadeInEffect",
- "duration": 0
-},
-{
- "label": "Flying Hearts Green Screen Effects",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
- "width": 1920,
- "loop": false,
- "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
- "class": "Video",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "class": "VideoResource",
-  "height": 1080,
-  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4"
- }
-},
-{
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
-},
-{
  "items": [
   {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_9245BDEB_B187_241C_41CB_B357E5427697, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_9245BDEB_B187_241C_41CB_B357E5427697, 0)",
+   "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_938A81B6_B185_1C77_41E2_BC72CF3B3B14, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_938A81B6_B185_1C77_41E2_BC72CF3B3B14, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_9245BDEB_B187_241C_41CB_B357E5427697",
- "class": "PlayList"
-},
-{
- "items": [
-  {
-   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera"
-  },
-  {
-   "media": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3",
-   "camera": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "end": "this.trigger('tourEnded')"
-  }
- ],
- "id": "mainPlayList",
+ "id": "playList_938A81B6_B185_1C77_41E2_BC72CF3B3B14",
  "class": "PlayList"
 },
 {
@@ -423,6 +389,19 @@
  "pitch": 0
 },
 {
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_938AA1B6_B185_1C77_41E2_00164E42F268, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_938AA1B6_B185_1C77_41E2_00164E42F268, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_938AA1B6_B185_1C77_41E2_00164E42F268",
+ "class": "PlayList"
+},
+{
  "hfovMax": 130,
  "hfovMin": "120%",
  "frames": [
@@ -705,10 +684,25 @@
  "pitch": 0
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
+ "items": [
+  {
+   "media": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_9EB5E367_9144_7BBE_41E0_CF7332C1114E_camera"
+  },
+  {
+   "media": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3",
+   "camera": "this.panorama_ADC48273_B18D_FC0D_41D1_963E754A6DE3_camera",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "end": "this.trigger('tourEnded')"
+  }
+ ],
+ "id": "mainPlayList",
+ "class": "PlayList"
 },
 {
  "automaticZoomSpeed": 10,
@@ -879,34 +873,6 @@
  }
 },
 {
- "id": "Image_A108EEB5_B08D_2474_4185_95EF6A5A251F",
- "left": "0%",
- "horizontalAlign": "center",
- "class": "Image",
- "minHeight": 1,
- "width": "100%",
- "shadow": false,
- "borderSize": 0,
- "url": "skin/Image_A108EEB5_B08D_2474_4185_95EF6A5A251F.gif",
- "minWidth": 1,
- "maxWidth": 1920,
- "top": "0%",
- "maxHeight": 1080,
- "verticalAlign": "middle",
- "paddingRight": 0,
- "paddingLeft": 0,
- "height": "100%",
- "paddingTop": 0,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "paddingBottom": 0,
- "scaleMode": "fit_inside",
- "propagateClick": false,
- "data": {
-  "name": "Image6075"
- }
-},
-{
  "id": "Image_A822F6B7_B083_2474_41DB_A99B87E1C695",
  "left": "0%",
  "horizontalAlign": "center",
@@ -935,6 +901,63 @@
  }
 },
 {
+ "id": "Image_9090767B_B18F_24FC_41CC_D8F0A4F70943",
+ "left": "0%",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "100%",
+ "shadow": false,
+ "borderSize": 0,
+ "url": "skin/Image_9090767B_B18F_24FC_41CC_D8F0A4F70943.gif",
+ "minWidth": 1,
+ "maxWidth": 1920,
+ "top": "0%",
+ "maxHeight": 1080,
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "100%",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "propagateClick": false,
+ "data": {
+  "name": "Image16755"
+ }
+},
+{
+ "id": "Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6",
+ "left": "0%",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "100%",
+ "shadow": false,
+ "borderSize": 0,
+ "url": "skin/Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6.gif",
+ "minWidth": 1,
+ "maxWidth": 1920,
+ "top": "0%",
+ "maxHeight": 1080,
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "100%",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "visible": false,
+ "propagateClick": false,
+ "data": {
+  "name": "Image16881"
+ }
+},
+{
  "cursor": "hand",
  "id": "IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
  "width": 140,
@@ -955,6 +978,7 @@
  "paddingLeft": 0,
  "mode": "push",
  "height": 120,
+ "click": "this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, true, 0, null, null, false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 3000, null, 'hideEffect', false)",
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,
@@ -963,35 +987,6 @@
  "propagateClick": false,
  "data": {
   "name": "IconButton12437"
- }
-},
-{
- "id": "Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
- "horizontalAlign": "center",
- "class": "Image",
- "minHeight": 1,
- "width": "19.361%",
- "shadow": false,
- "borderSize": 0,
- "right": "11.46%",
- "url": "skin/Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E.gif",
- "minWidth": 1,
- "maxWidth": 821,
- "top": "12.02%",
- "maxHeight": 1460,
- "verticalAlign": "middle",
- "paddingRight": 0,
- "paddingLeft": 0,
- "height": "38.258%",
- "click": "this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, true, 0, this.effect_A50A1CB8_B082_E47B_41E5_76DF5DB751A2, 'showEffect', false); this.mainPlayList.set('selectedIndex', 1)",
- "paddingTop": 0,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "paddingBottom": 0,
- "scaleMode": "fit_inside",
- "propagateClick": false,
- "data": {
-  "name": "Image7149"
  }
 },
 {
@@ -1069,6 +1064,35 @@
  "overflow": "scroll"
 },
 {
+ "id": "Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "19.361%",
+ "shadow": false,
+ "borderSize": 0,
+ "right": "11.46%",
+ "url": "skin/Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E.gif",
+ "minWidth": 1,
+ "maxWidth": 821,
+ "top": "12.02%",
+ "maxHeight": 1460,
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "38.258%",
+ "click": "this.setComponentVisibility(this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695, false, 0, null, null, false); this.setComponentVisibility(this.Image_9090767B_B18F_24FC_41CC_D8F0A4F70943, false, 0, null, null, false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 0, null, null, false); this.setComponentVisibility(this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C, false, 0, null, null, false); this.setComponentVisibility(this.Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B, false, 0, null, null, false); this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, false, 0, null, null, false); this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, null, null, false); this.setComponentVisibility(this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E, false, 0, null, null, false)",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "propagateClick": false,
+ "data": {
+  "name": "Image7149"
+ }
+},
+{
  "backgroundColorRatios": [
   0
  ],
@@ -1107,12 +1131,13 @@
  },
  "children": [
   "this.MainViewer",
-  "this.Image_A108EEB5_B08D_2474_4185_95EF6A5A251F",
   "this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695",
+  "this.Image_9090767B_B18F_24FC_41CC_D8F0A4F70943",
+  "this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6",
   "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
-  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
   "this.Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B",
-  "this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E"
+  "this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E",
+  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E"
  ],
  "layout": "absolute",
  "id": "rootPlayer",

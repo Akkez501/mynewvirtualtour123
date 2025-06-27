@@ -1,6 +1,19 @@
 (function(){
     var script = {
  "definitions": [{
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BE3D101B_B086_FC3C_41E0_E240CA23AB06, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BE3D101B_B086_FC3C_41E0_E240CA23AB06, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_BE3D101B_B086_FC3C_41E0_E240CA23AB06",
+ "class": "PlayList"
+},
+{
  "hfovMax": 130,
  "hfovMin": "120%",
  "frames": [
@@ -283,10 +296,20 @@
  "pitch": 0
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
+ "class": "Video",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920,
+  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
+ }
 },
 {
  "displayOriginPosition": {
@@ -344,20 +367,19 @@
  }
 },
 {
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511_t.jpg",
- "width": 1080,
- "loop": false,
- "id": "video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
- "class": "Video",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920,
-  "mp4Url": "media/video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511.mp4"
- }
+ "viewerArea": "this.MainViewer",
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
+},
+{
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
 },
 {
  "label": "Flying Hearts Green Screen Effects",
@@ -391,37 +413,15 @@
 {
  "items": [
   {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BD7A589D_B085_2C35_41C9_540B7FFBA10D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BD7A589D_B085_2C35_41C9_540B7FFBA10D, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_BD7A589D_B085_2C35_41C9_540B7FFBA10D",
- "class": "PlayList"
-},
-{
- "items": [
-  {
    "media": "this.video_A3CE547E_AD61_1BB6_41D9_09FC4CACD511",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BD7B889D_B085_2C35_41B0_0DC0B1008999, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BD7B889D_B085_2C35_41B0_0DC0B1008999, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_BE3ED01B_B086_FC3C_41D8_3ED16EB938E9, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_BE3ED01B_B086_FC3C_41D8_3ED16EB938E9, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_BD7B889D_B085_2C35_41B0_0DC0B1008999",
+ "id": "playList_BE3ED01B_B086_FC3C_41D8_3ED16EB938E9",
  "class": "PlayList"
-},
-{
- "viewerArea": "this.MainViewer",
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
 },
 {
  "playbackBarHeadOpacity": 1,
@@ -557,17 +557,17 @@
  "minHeight": 1,
  "shadow": false,
  "backgroundColorDirection": "vertical",
- "right": "19.9%",
+ "right": "21.41%",
  "borderSize": 0,
  "scrollEnabled": true,
  "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8445.518874854317!2d76.84404857619177!3d30.666915438809568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f94bdaee963a7%3A0x18db8bcc1bb5500e!2sSekhon%20Banquet%2C%20Industrial%20Area%20Phase%201%2C%20Punjab%20134109!5e1!3m2!1sen!2sin!4v1750490589998!5m2!1sen!2sin",
  "minWidth": 1,
+ "bottom": "13.34%",
  "paddingRight": 0,
  "paddingLeft": 0,
  "backgroundColor": [
   "#FFFFFF"
  ],
- "top": "40.79%",
  "height": "12.569%",
  "insetBorder": false,
  "paddingTop": 0,
@@ -580,15 +580,15 @@
  }
 },
 {
- "id": "Image_BD77737C_B085_FCFB_41E1_A42087A4C948",
+ "id": "Image_BE7081F8_AD61_7CBB_41D9_909B036414AE",
  "left": "0%",
- "width": 1920,
+ "horizontalAlign": "center",
  "class": "Image",
  "minHeight": 1,
- "horizontalAlign": "center",
+ "width": "100%",
  "shadow": false,
  "borderSize": 0,
- "url": "skin/Image_BD77737C_B085_FCFB_41E1_A42087A4C948.gif",
+ "url": "skin/Image_BE7081F8_AD61_7CBB_41D9_909B036414AE.png",
  "minWidth": 1,
  "maxWidth": 1920,
  "top": "0%",
@@ -596,7 +596,7 @@
  "verticalAlign": "middle",
  "paddingRight": 0,
  "paddingLeft": 0,
- "height": 1080,
+ "height": "100%",
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,
@@ -604,30 +604,58 @@
  "scaleMode": "fit_inside",
  "propagateClick": false,
  "data": {
-  "name": "Image1478"
+  "name": "Image10787"
+ }
+},
+{
+ "id": "Image_BEE501E9_AD6F_1CDA_41E1_C8DFBFE23FC5",
+ "left": "0%",
+ "horizontalAlign": "center",
+ "class": "Image",
+ "minHeight": 1,
+ "width": "100%",
+ "shadow": false,
+ "borderSize": 0,
+ "url": "skin/Image_BEE501E9_AD6F_1CDA_41E1_C8DFBFE23FC5.gif",
+ "minWidth": 1,
+ "maxWidth": 1920,
+ "top": "0%",
+ "maxHeight": 1080,
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "height": "100%",
+ "paddingTop": 0,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "paddingBottom": 0,
+ "scaleMode": "fit_inside",
+ "propagateClick": false,
+ "data": {
+  "name": "Image8287"
  }
 },
 {
  "cursor": "hand",
  "id": "IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
- "width": 135.15,
+ "left": "43.18%",
+ "width": 220.1,
  "class": "IconButton",
  "minHeight": 1,
  "horizontalAlign": "center",
  "shadow": false,
  "borderSize": 0,
- "right": "45.48%",
  "transparencyActive": false,
  "minWidth": 1,
  "maxWidth": 568,
  "iconURL": "skin/IconButton_906940FE_81C0_D212_41CB_D8E2E633544C.png",
  "maxHeight": 526,
- "bottom": "1.33%",
+ "bottom": "16.43%",
  "verticalAlign": "middle",
  "paddingRight": 0,
  "paddingLeft": 0,
  "mode": "push",
- "height": 115,
+ "height": 146,
  "paddingTop": 0,
  "backgroundOpacity": 0,
  "borderRadius": 0,
@@ -645,7 +673,8 @@
  "children": [
   "this.MainViewer",
   "this.WebFrame_818D018F_9147_B68E_41D0_2E11C854A9CE",
-  "this.Image_BD77737C_B085_FCFB_41E1_A42087A4C948",
+  "this.Image_BE7081F8_AD61_7CBB_41D9_909B036414AE",
+  "this.Image_BEE501E9_AD6F_1CDA_41E1_C8DFBFE23FC5",
   "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C"
  ],
  "layout": "absolute",

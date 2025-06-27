@@ -8,12 +8,14 @@
   "this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695",
   "this.Image_A4CD735F_B1F8_E208_41DA_67F3F64D6984",
   "this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6",
-  "this.Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B",
   "this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E",
-  "this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
   "this.Image_94268F18_B185_643B_41DE_AC77F213B79F",
   "this.Image_A596F5B4_B1C8_2618_41CA_69FF0FF1BEF4",
-  "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C"
+  "this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C",
+  "this.IconButton_A8B5D366_B238_623B_4132_66856AF845FC",
+  "this.ViewerAreaLabeled_AC3F7BEE_B248_2208_41C8_4AA14847EB83",
+  "this.IconButton_AF984091_B257_FE18_41DF_4773295C7123",
+  "this.WebFrame_AFC29C67_B258_E639_41E1_ADA9CDC290C6"
  ],
  "scrollBarVisible": "rollOver",
  "start": "this.init()",
@@ -90,39 +92,17 @@
  "class": "PanoramaCamera"
 },
 {
- "initialPosition": {
-  "hfov": 95,
-  "yaw": -105.92,
-  "pitch": 0.62,
-  "class": "PanoramaCameraPosition"
- },
- "initialSequence": {
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawSpeed": 7.96,
-    "class": "DistancePanoramaCameraMovement",
-    "yawDelta": 18.5,
-    "easing": "cubic_in"
-   },
-   {
-    "yawSpeed": 7.96,
-    "class": "DistancePanoramaCameraMovement",
-    "yawDelta": 323,
-    "easing": "linear"
-   },
-   {
-    "yawSpeed": 7.96,
-    "class": "DistancePanoramaCameraMovement",
-    "yawDelta": 18.5,
-    "easing": "cubic_out"
-   }
-  ],
-  "restartMovementOnUserInteraction": false
- },
- "automaticZoomSpeed": 10,
- "id": "panorama_993375AA_B18F_241F_41E1_9E05DDD76AAB_camera",
- "class": "PanoramaCamera"
+ "easing": "linear",
+ "duration": 1000,
+ "from": "top",
+ "id": "effect_AFA459AC_B258_2E0F_41C7_66D8C67C7388",
+ "class": "SlideInEffect"
+},
+{
+ "easing": "cubic_in",
+ "duration": 6000,
+ "id": "effect_939DCBC1_B258_2278_41E0_404A0E876F76",
+ "class": "FadeInEffect"
 },
 {
  "items": [
@@ -146,10 +126,17 @@
  "class": "PlayList"
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "displayPlaybackBar": true,
- "class": "VideoPlayer"
+ "items": [
+  {
+   "media": "this.video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_91F1976B_B248_2209_41DF_1108871D5863, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_91F1976B_B248_2209_41DF_1108871D5863, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_91F1976B_B248_2209_41DF_1108871D5863",
+ "class": "PlayList"
 },
 {
  "frames": [
@@ -447,96 +434,6 @@
  }
 },
 {
- "class": "Video",
- "thumbnailUrl": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E_t.jpg",
- "scaleMode": "fit_inside",
- "width": 1080,
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
- "loop": false,
- "id": "video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
- "height": 1920,
- "video": {
-  "width": 1080,
-  "class": "VideoResource",
-  "mp4Url": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E.mp4",
-  "height": 1920
- }
-},
-{
- "autoplay": true,
- "audio": {
-  "oggUrl": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.ogg",
-  "mp3Url": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.mp3",
-  "class": "AudioResource"
- },
- "id": "audio_9732853A_B1FD_247F_41D8_39F61889E37C",
- "data": {
-  "label": "clapping"
- },
- "class": "MediaAudio"
-},
-{
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AA80D57F_B1D8_2608_41E4_962514AF37D3, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AA80D57F_B1D8_2608_41E4_962514AF37D3, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_AA80D57F_B1D8_2608_41E4_962514AF37D3",
- "class": "PlayList"
-},
-{
- "class": "Video",
- "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
- "scaleMode": "fit_inside",
- "width": 1920,
- "label": "Flying Hearts Green Screen Effects",
- "loop": false,
- "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
- "height": 1080,
- "video": {
-  "width": 1920,
-  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4",
-  "height": 1080,
-  "class": "VideoResource"
- }
-},
-{
- "gyroscopeEnabled": true,
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "viewerArea": "this.MainViewer",
- "gyroscopeVerticalDraggingEnabled": true,
- "id": "MainViewerPanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "mouseControlMode": "drag_acceleration"
-},
-{
- "autoplay": true,
- "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
- "id": "audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A",
- "data": {
-  "label": "Happy_Birthday_Bouncy"
- },
- "class": "PanoramaAudio"
-},
-{
- "items": [
-  {
-   "media": "this.video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AA81057F_B1D8_2608_41E2_8BB9FCA33EEC, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AA81057F_B1D8_2608_41E2_8BB9FCA33EEC, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_AA81057F_B1D8_2608_41E2_8BB9FCA33EEC",
- "class": "PlayList"
-},
-{
  "frames": [
   {
    "front": {
@@ -822,6 +719,131 @@
  "hfovMax": 130
 },
 {
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_91F1A76B_B248_2209_41D8_C15C704D9E78, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_91F1A76B_B248_2209_41D8_C15C704D9E78, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_91F1A76B_B248_2209_41D8_C15C704D9E78",
+ "class": "PlayList"
+},
+{
+ "autoplay": true,
+ "audio": {
+  "oggUrl": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.ogg",
+  "mp3Url": "media/audio_9732853A_B1FD_247F_41D8_39F61889E37C.mp3",
+  "class": "AudioResource"
+ },
+ "id": "audio_9732853A_B1FD_247F_41D8_39F61889E37C",
+ "data": {
+  "label": "clapping"
+ },
+ "class": "MediaAudio"
+},
+{
+ "easing": "linear",
+ "duration": 1000,
+ "to": "left",
+ "id": "effect_92586468_B249_E637_41B7_0B26E401109F",
+ "class": "SlideOutEffect"
+},
+{
+ "class": "Video",
+ "thumbnailUrl": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E_t.jpg",
+ "scaleMode": "fit_inside",
+ "width": 1080,
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
+ "loop": false,
+ "id": "video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E",
+ "height": 1920,
+ "video": {
+  "width": 1080,
+  "class": "VideoResource",
+  "mp4Url": "media/video_A88A10BC_B1D8_7E0F_41E2_EB551CCE467E.mp4",
+  "height": 1920
+ }
+},
+{
+ "class": "Video",
+ "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
+ "scaleMode": "fit_inside",
+ "width": 1920,
+ "label": "Flying Hearts Green Screen Effects",
+ "loop": false,
+ "id": "video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+ "height": 1080,
+ "video": {
+  "width": 1920,
+  "mp4Url": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67.mp4",
+  "height": 1080,
+  "class": "VideoResource"
+ }
+},
+{
+ "autoplay": true,
+ "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
+ "id": "audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A",
+ "data": {
+  "label": "Happy_Birthday_Bouncy"
+ },
+ "class": "PanoramaAudio"
+},
+{
+ "initialPosition": {
+  "hfov": 115,
+  "yaw": -105.92,
+  "pitch": 0.62,
+  "class": "PanoramaCameraPosition"
+ },
+ "initialSequence": {
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawSpeed": 7.96,
+    "class": "DistancePanoramaCameraMovement",
+    "yawDelta": 18.5,
+    "easing": "cubic_in"
+   },
+   {
+    "yawSpeed": 7.96,
+    "class": "DistancePanoramaCameraMovement",
+    "yawDelta": 323,
+    "easing": "linear"
+   },
+   {
+    "yawSpeed": 7.96,
+    "class": "DistancePanoramaCameraMovement",
+    "yawDelta": 18.5,
+    "easing": "cubic_out"
+   }
+  ],
+  "restartMovementOnUserInteraction": false
+ },
+ "automaticZoomSpeed": 10,
+ "id": "panorama_993375AA_B18F_241F_41E1_9E05DDD76AAB_camera",
+ "class": "PanoramaCamera"
+},
+{
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "displayPlaybackBar": true,
+ "class": "VideoPlayer"
+},
+{
+ "gyroscopeEnabled": true,
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "viewerArea": "this.MainViewer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "id": "MainViewerPanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "mouseControlMode": "drag_acceleration"
+},
+{
  "progressBarBorderSize": 0,
  "id": "MainViewer",
  "width": "100%",
@@ -980,7 +1002,7 @@
  "id": "Image_A4CD735F_B1F8_E208_41DA_67F3F64D6984",
  "backgroundOpacity": 0,
  "left": "0%",
- "width": "97.407%",
+ "width": "100%",
  "verticalAlign": "middle",
  "borderRadius": 0,
  "url": "skin/Image_A4CD735F_B1F8_E208_41DA_67F3F64D6984.png",
@@ -1032,34 +1054,6 @@
  "horizontalAlign": "center"
 },
 {
- "maxHeight": 500,
- "maxWidth": 500,
- "id": "Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B",
- "backgroundOpacity": 0,
- "right": "9.65%",
- "width": "23.16%",
- "verticalAlign": "middle",
- "borderRadius": 0,
- "url": "skin/Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B.png",
- "paddingLeft": 0,
- "paddingRight": 0,
- "class": "Image",
- "minHeight": 1,
- "propagateClick": false,
- "top": "27.45%",
- "height": "31.092%",
- "minWidth": 1,
- "paddingTop": 0,
- "paddingBottom": 0,
- "borderSize": 0,
- "scaleMode": "fit_inside",
- "data": {
-  "name": "Image14189"
- },
- "shadow": false,
- "horizontalAlign": "center"
-},
-{
  "scrollBarOpacity": 0.5,
  "id": "Container_A579232D_B09D_1C14_41B9_7977AD6AC66E",
  "backgroundOpacity": 0.3,
@@ -1106,41 +1100,12 @@
  "horizontalAlign": "left"
 },
 {
- "maxHeight": 1460,
- "maxWidth": 821,
- "id": "Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E",
- "backgroundOpacity": 0,
- "right": "11.46%",
- "width": "19.361%",
- "verticalAlign": "middle",
- "borderRadius": 0,
- "url": "skin/Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E.gif",
- "paddingLeft": 0,
- "paddingRight": 0,
- "class": "Image",
- "minHeight": 1,
- "propagateClick": false,
- "top": "12.02%",
- "height": "38.258%",
- "minWidth": 1,
- "paddingTop": 0,
- "paddingBottom": 0,
- "borderSize": 0,
- "click": "this.setComponentVisibility(this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695, false, 0, null, null, false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 0, null, null, false); this.setComponentVisibility(this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C, false, 0, null, null, false); this.setComponentVisibility(this.Image_AB4EA351_B17D_1C0C_41CE_B3F1C0F1120B, false, 0, null, null, false); this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, false, 0, null, null, false); this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, null, null, false); this.setComponentVisibility(this.Image_A00A1B62_B08F_EC0C_41D1_A03155D4FF4E, false, 0, null, null, false)",
- "scaleMode": "fit_inside",
- "data": {
-  "name": "Image7149"
- },
- "shadow": false,
- "horizontalAlign": "center"
-},
-{
  "maxHeight": 821,
  "maxWidth": 1460,
  "id": "Image_94268F18_B185_643B_41DE_AC77F213B79F",
  "backgroundOpacity": 0,
- "right": "31.78%",
- "width": "32.811%",
+ "left": "35.4%",
+ "width": "27.805%",
  "verticalAlign": "middle",
  "paddingRight": 0,
  "url": "skin/Image_94268F18_B185_643B_41DE_AC77F213B79F.gif",
@@ -1150,11 +1115,11 @@
  "minHeight": 1,
  "propagateClick": false,
  "bottom": "6.62%",
- "height": "19.294%",
+ "height": "18.082%",
  "minWidth": 1,
+ "borderSize": 0,
  "paddingTop": 0,
  "paddingBottom": 0,
- "borderSize": 0,
  "scaleMode": "fit_inside",
  "data": {
   "name": "Image23189"
@@ -1221,6 +1186,228 @@
  },
  "shadow": false,
  "cursor": "hand"
+},
+{
+ "horizontalAlign": "center",
+ "maxHeight": 1460,
+ "maxWidth": 821,
+ "id": "IconButton_A8B5D366_B238_623B_4132_66856AF845FC",
+ "backgroundOpacity": 0,
+ "width": 602,
+ "right": "18.7%",
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "borderRadius": 0,
+ "class": "IconButton",
+ "minHeight": 1,
+ "propagateClick": false,
+ "bottom": "12.31%",
+ "height": 677.35,
+ "minWidth": 1,
+ "mode": "push",
+ "paddingTop": 0,
+ "paddingBottom": 0,
+ "transparencyActive": false,
+ "borderSize": 0,
+ "click": "this.mainPlayList.set('selectedIndex', 1); this.setComponentVisibility(this.Image_A822F6B7_B083_2474_41DB_A99B87E1C695, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.Image_A4CD735F_B1F8_E208_41DA_67F3F64D6984, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.Image_AED1AB4A_B18D_2C1C_41C7_6844926133F6, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.Container_A579232D_B09D_1C14_41B9_7977AD6AC66E, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.WebFrame_A3D3F789_B083_641D_41E5_8EEA9D03F75F, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.Image_94268F18_B185_643B_41DE_AC77F213B79F, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.Image_A596F5B4_B1C8_2618_41CA_69FF0FF1BEF4, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.IconButton_906940FE_81C0_D212_41CB_D8E2E633544C, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.IconButton_A8B5D366_B238_623B_4132_66856AF845FC, false, 0, this.effect_92586468_B249_E637_41B7_0B26E401109F, 'hideEffect', false); this.setComponentVisibility(this.IconButton_AF984091_B257_FE18_41DF_4773295C7123, true, 0, this.effect_939DCBC1_B258_2278_41E0_404A0E876F76, 'showEffect', false)",
+ "iconURL": "skin/IconButton_A8B5D366_B238_623B_4132_66856AF845FC.png",
+ "pressedIconURL": "skin/IconButton_A8B5D366_B238_623B_4132_66856AF845FC_pressed.png",
+ "data": {
+  "name": "IconButton6244"
+ },
+ "shadow": false,
+ "cursor": "hand"
+},
+{
+ "progressBarBorderSize": 0,
+ "id": "ViewerAreaLabeled_AC3F7BEE_B248_2208_41C8_4AA14847EB83",
+ "width": "100%",
+ "playbackBarProgressBorderRadius": 0,
+ "left": "0%",
+ "toolTipShadowOpacity": 1,
+ "playbackBarBorderRadius": 0,
+ "progressBarBorderRadius": 0,
+ "toolTipFontStyle": "normal",
+ "paddingLeft": 0,
+ "playbackBarProgressBorderColor": "#000000",
+ "minHeight": 1,
+ "toolTipFontFamily": "Arial",
+ "propagateClick": false,
+ "toolTipTextShadowOpacity": 0,
+ "playbackBarHeadBorderRadius": 0,
+ "progressLeft": 0,
+ "playbackBarHeadBorderSize": 0,
+ "playbackBarProgressOpacity": 1,
+ "playbackBarBorderSize": 0,
+ "transitionDuration": 500,
+ "toolTipShadowVerticalLength": 0,
+ "minWidth": 1,
+ "playbackBarBackgroundOpacity": 1,
+ "height": "100%",
+ "toolTipFontColor": "#606060",
+ "playbackBarHeadBorderColor": "#000000",
+ "vrPointerSelectionColor": "#FF6600",
+ "borderSize": 0,
+ "toolTipShadowHorizontalLength": 0,
+ "playbackBarHeadShadowColor": "#000000",
+ "toolTipBackgroundColor": "#F6F6F6",
+ "progressRight": 0,
+ "firstTransitionDuration": 0,
+ "progressOpacity": 1,
+ "playbackBarHeadBackgroundColor": [
+  "#111111",
+  "#666666"
+ ],
+ "vrPointerSelectionTime": 2000,
+ "progressBarBackgroundColorDirection": "vertical",
+ "progressBottom": 2,
+ "progressHeight": 10,
+ "playbackBarHeadShadow": true,
+ "shadow": false,
+ "playbackBarHeadBackgroundColorDirection": "vertical",
+ "progressBackgroundOpacity": 1,
+ "playbackBarProgressBackgroundColor": [
+  "#3399FF"
+ ],
+ "playbackBarOpacity": 1,
+ "toolTipPaddingRight": 6,
+ "playbackBarHeadShadowOpacity": 0.7,
+ "toolTipBorderSize": 1,
+ "toolTipPaddingLeft": 6,
+ "toolTipPaddingTop": 4,
+ "vrPointerColor": "#FFFFFF",
+ "toolTipDisplayTime": 600,
+ "progressBarOpacity": 1,
+ "playbackBarBorderColor": "#FFFFFF",
+ "progressBorderSize": 0,
+ "transitionMode": "blending",
+ "displayTooltipInTouchScreens": true,
+ "toolTipBorderRadius": 3,
+ "paddingRight": 0,
+ "progressBorderRadius": 0,
+ "borderRadius": 0,
+ "class": "ViewerArea",
+ "playbackBarLeft": 0,
+ "progressBackgroundColorRatios": [
+  0
+ ],
+ "playbackBarProgressBackgroundColorRatios": [
+  0
+ ],
+ "playbackBarHeadHeight": 15,
+ "top": "0%",
+ "playbackBarHeadShadowBlurRadius": 3,
+ "playbackBarHeadShadowHorizontalLength": 0,
+ "playbackBarHeadShadowVerticalLength": 0,
+ "playbackBarHeadBackgroundColorRatios": [
+  0,
+  1
+ ],
+ "progressBarBorderColor": "#000000",
+ "toolTipBorderColor": "#767676",
+ "progressBarBackgroundColorRatios": [
+  0
+ ],
+ "progressBackgroundColorDirection": "vertical",
+ "toolTipShadowSpread": 0,
+ "toolTipShadowBlurRadius": 3,
+ "playbackBarBottom": 0,
+ "toolTipTextShadowColor": "#000000",
+ "toolTipOpacity": 1,
+ "playbackBarHeadOpacity": 1,
+ "progressBarBackgroundColor": [
+  "#3399FF"
+ ],
+ "paddingTop": 0,
+ "paddingBottom": 0,
+ "toolTipPaddingBottom": 4,
+ "toolTipFontSize": "1.11vmin",
+ "toolTipTextShadowBlurRadius": 3,
+ "progressBackgroundColor": [
+  "#FFFFFF"
+ ],
+ "playbackBarProgressBackgroundColorDirection": "vertical",
+ "toolTipShadowColor": "#333333",
+ "playbackBarBackgroundColor": [
+  "#FFFFFF"
+ ],
+ "progressBorderColor": "#000000",
+ "data": {
+  "name": "Viewer 2"
+ },
+ "playbackBarHeight": 10,
+ "visible": false,
+ "toolTipFontWeight": "normal",
+ "playbackBarBackgroundColorDirection": "vertical",
+ "playbackBarHeadWidth": 6,
+ "playbackBarProgressBorderSize": 0,
+ "playbackBarRight": 0
+},
+{
+ "horizontalAlign": "center",
+ "maxHeight": 600,
+ "maxWidth": 601,
+ "id": "IconButton_AF984091_B257_FE18_41DF_4773295C7123",
+ "backgroundOpacity": 0,
+ "width": 210,
+ "right": "22.44%",
+ "verticalAlign": "middle",
+ "paddingRight": 0,
+ "paddingLeft": 0,
+ "borderRadius": 0,
+ "class": "IconButton",
+ "minHeight": 1,
+ "propagateClick": false,
+ "bottom": "36.27%",
+ "height": 221,
+ "minWidth": 1,
+ "mode": "push",
+ "paddingTop": 0,
+ "paddingBottom": 0,
+ "transparencyActive": false,
+ "borderSize": 0,
+ "click": "this.setComponentVisibility(this.WebFrame_AFC29C67_B258_E639_41E1_ADA9CDC290C6, true, 0, this.effect_AFA459AC_B258_2E0F_41C7_66D8C67C7388, 'showEffect', false)",
+ "iconURL": "skin/IconButton_AF984091_B257_FE18_41DF_4773295C7123.png",
+ "data": {
+  "name": "IconButton8923"
+ },
+ "shadow": false,
+ "visible": false,
+ "cursor": "hand"
+},
+{
+ "id": "WebFrame_AFC29C67_B258_E639_41E1_ADA9CDC290C6",
+ "backgroundOpacity": 1,
+ "width": "100%",
+ "left": "0%",
+ "paddingRight": 0,
+ "insetBorder": false,
+ "paddingLeft": 0,
+ "borderRadius": 0,
+ "class": "WebFrame",
+ "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4222.789817837587!2d76.84427017557775!3d30.666220274616474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f94bdae8e9dfd%3A0xcf3d6252f9cb54b3!2sSekhon%20Banquet!5e1!3m2!1sen!2sin!4v1751039134206!5m2!1sen!2sin",
+ "backgroundColorRatios": [
+  0
+ ],
+ "propagateClick": false,
+ "minHeight": 1,
+ "top": "0%",
+ "backgroundColor": [
+  "#FFFFFF"
+ ],
+ "minWidth": 1,
+ "height": "100%",
+ "borderSize": 0,
+ "paddingTop": 0,
+ "backgroundColorDirection": "vertical",
+ "paddingBottom": 0,
+ "scrollEnabled": true,
+ "data": {
+  "name": "WebFrame9373"
+ },
+ "shadow": false,
+ "visible": false
 },
 {
  "class": "AudioResource",

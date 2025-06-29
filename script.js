@@ -1,7 +1,7 @@
 (function(){
     var script = {
  "definitions": [{
- "hfovMax": 76,
+ "hfovMax": 87,
  "frames": [
   {
    "class": "CubicPanoramaFrame",
@@ -642,7 +642,6 @@
  ]
 },
 {
- "gyroscopeEnabled": true,
  "viewerArea": "this.MainViewer",
  "class": "PanoramaPlayer",
  "displayPlaybackBar": true,
@@ -684,19 +683,6 @@
  }
 },
 {
- "class": "PlayList",
- "id": "playList_AA0D5788_BD27_CCC3_41DA_826F6AB78924",
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "class": "VideoPlayListItem",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AA0D5788_BD27_CCC3_41DA_826F6AB78924, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AA0D5788_BD27_CCC3_41DA_826F6AB78924, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ]
-},
-{
  "autoplay": true,
  "class": "PanoramaAudio",
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -713,12 +699,25 @@
  "displayPlaybackBar": true
 },
 {
+ "class": "PlayList",
+ "id": "playList_A6E5270C_BD3A_CDDC_41D5_58B86D69DE91",
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "class": "VideoPlayListItem",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A6E5270C_BD3A_CDDC_41D5_58B86D69DE91, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A6E5270C_BD3A_CDDC_41D5_58B86D69DE91, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ]
+},
+{
  "class": "PanoramaCamera",
  "initialPosition": {
-  "hfov": 72,
+  "hfov": 87,
   "class": "PanoramaCameraPosition",
-  "yaw": -145.71,
-  "pitch": 1.78
+  "yaw": -144.1,
+  "pitch": 2.65
  },
  "initialSequence": {
   "restartMovementOnUserInteraction": false,
@@ -752,11 +751,11 @@
    "duration": 1000
   },
   {
-   "targetPitch": 1.78,
+   "targetPitch": 2.65,
    "class": "TargetRotationalCameraDisplayMovement",
    "targetStereographicFactor": 0,
    "duration": 3000,
-   "targetHfov": 72,
+   "targetHfov": 87,
    "easing": "cubic_in_out"
   }
  ],
@@ -764,7 +763,7 @@
  "displayOriginPosition": {
   "hfov": 165,
   "class": "RotationalCameraDisplayPosition",
-  "yaw": -145.71,
+  "yaw": -144.1,
   "stereographicFactor": 1,
   "pitch": -90
  }

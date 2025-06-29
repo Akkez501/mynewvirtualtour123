@@ -1,7 +1,7 @@
 (function(){
     var script = {
  "definitions": [{
- "hfovMax": 62,
+ "hfovMax": 76,
  "frames": [
   {
    "class": "CubicPanoramaFrame",
@@ -605,6 +605,19 @@
  ]
 },
 {
+ "class": "PlayList",
+ "id": "playList_AB15D0CF_BD1E_C45C_41E6_EAD336396E08",
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "class": "VideoPlayListItem",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AB15D0CF_BD1E_C45C_41E6_EAD336396E08, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AB15D0CF_BD1E_C45C_41E6_EAD336396E08, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ]
+},
+{
  "autoplay": true,
  "class": "PanoramaAudio",
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -638,19 +651,6 @@
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 2, 0)",
    "player": "this.MainViewerVideoPlayer",
    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 2, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 2)"
-  }
- ]
-},
-{
- "class": "PlayList",
- "id": "playList_ADA249D6_BAE7_444C_41D4_53D44A2712D2",
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "class": "VideoPlayListItem",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_ADA249D6_BAE7_444C_41D4_53D44A2712D2, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_ADA249D6_BAE7_444C_41D4_53D44A2712D2, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
   }
  ]
 },
@@ -715,7 +715,7 @@
 {
  "class": "PanoramaCamera",
  "initialPosition": {
-  "hfov": 62,
+  "hfov": 72,
   "class": "PanoramaCameraPosition",
   "yaw": -145.71,
   "pitch": 1.78
@@ -756,7 +756,7 @@
    "class": "TargetRotationalCameraDisplayMovement",
    "targetStereographicFactor": 0,
    "duration": 3000,
-   "targetHfov": 62,
+   "targetHfov": 72,
    "easing": "cubic_in_out"
   }
  ],

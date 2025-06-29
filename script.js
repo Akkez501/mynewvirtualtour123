@@ -1,14 +1,6 @@
 (function(){
     var script = {
  "definitions": [{
- "hfovMin": "120%",
- "label": "M3_Maximalism_Render_equirectangular-png_Fantasy_skybox_for_birthday_1533981114_13965976",
- "id": "panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B",
- "thumbnailUrl": "media/panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B_t.jpg",
- "hfov": 360,
- "partial": false,
- "class": "Panorama",
- "pitch": 0,
  "hfovMax": 130,
  "frames": [
   {
@@ -281,9 +273,16 @@
   }
  ],
  "vfov": 180,
+ "hfov": 360,
+ "label": "M3_Maximalism_Render_equirectangular-png_Fantasy_skybox_for_birthday_1533981114_13965976",
  "audios": [
   "this.audio_A7354570_B1F8_E618_41E1_A4567DCC8CA8"
- ]
+ ],
+ "id": "panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B",
+ "thumbnailUrl": "media/panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B_t.jpg",
+ "partial": false,
+ "class": "Panorama",
+ "pitch": 0
 },
 {
  "class": "PanoramaCamera",
@@ -606,17 +605,13 @@
  ]
 },
 {
- "class": "PlayList",
- "id": "playList_AD47E8F9_BAFB_C444_41E4_07AC70BF519C",
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "class": "VideoPlayListItem",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AD47E8F9_BAFB_C444_41E4_07AC70BF519C, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AD47E8F9_BAFB_C444_41E4_07AC70BF519C, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ]
+ "autoplay": true,
+ "class": "PanoramaAudio",
+ "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
+ "id": "audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A",
+ "data": {
+  "label": "Happy_Birthday_Bouncy"
+ }
 },
 {
  "class": "PlayList",
@@ -643,6 +638,19 @@
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 2, 0)",
    "player": "this.MainViewerVideoPlayer",
    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 2, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 2)"
+  }
+ ]
+},
+{
+ "class": "PlayList",
+ "id": "playList_ADB5FAD3_BAE6_C445_41C7_3172568D6E56",
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "class": "VideoPlayListItem",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_ADB5FAD3_BAE6_C445_41C7_3172568D6E56, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_ADB5FAD3_BAE6_C445_41C7_3172568D6E56, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
   }
  ]
 },
@@ -707,10 +715,10 @@
 {
  "class": "PanoramaCamera",
  "initialPosition": {
-  "hfov": 106,
+  "hfov": 93,
   "class": "PanoramaCameraPosition",
-  "yaw": -146.43,
-  "pitch": 2.28
+  "yaw": -141.87,
+  "pitch": 1.82
  },
  "initialSequence": {
   "restartMovementOnUserInteraction": false,
@@ -744,11 +752,11 @@
    "duration": 1000
   },
   {
-   "targetPitch": 2.28,
+   "targetPitch": 1.82,
    "class": "TargetRotationalCameraDisplayMovement",
    "targetStereographicFactor": 0,
    "duration": 3000,
-   "targetHfov": 106,
+   "targetHfov": 93,
    "easing": "cubic_in_out"
   }
  ],
@@ -756,18 +764,9 @@
  "displayOriginPosition": {
   "hfov": 165,
   "class": "RotationalCameraDisplayPosition",
-  "yaw": -146.43,
+  "yaw": -141.87,
   "stereographicFactor": 1,
   "pitch": -90
- }
-},
-{
- "autoplay": true,
- "class": "PanoramaAudio",
- "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
- "id": "audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A",
- "data": {
-  "label": "Happy_Birthday_Bouncy"
  }
 },
 {

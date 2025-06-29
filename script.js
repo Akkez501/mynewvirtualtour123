@@ -605,6 +605,19 @@
  ]
 },
 {
+ "class": "PlayList",
+ "id": "playList_A64701B1_BD7B_44C4_41C6_E6F52216299B",
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "class": "VideoPlayListItem",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A64701B1_BD7B_44C4_41C6_E6F52216299B, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A64701B1_BD7B_44C4_41C6_E6F52216299B, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ]
+},
+{
  "autoplay": true,
  "class": "PanoramaAudio",
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -699,22 +712,9 @@
  "displayPlaybackBar": true
 },
 {
- "class": "PlayList",
- "id": "playList_A6E5270C_BD3A_CDDC_41D5_58B86D69DE91",
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "class": "VideoPlayListItem",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_A6E5270C_BD3A_CDDC_41D5_58B86D69DE91, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_A6E5270C_BD3A_CDDC_41D5_58B86D69DE91, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ]
-},
-{
  "class": "PanoramaCamera",
  "initialPosition": {
-  "hfov": 87,
+  "hfov": 77,
   "class": "PanoramaCameraPosition",
   "yaw": -144.1,
   "pitch": 2.65
@@ -755,7 +755,7 @@
    "class": "TargetRotationalCameraDisplayMovement",
    "targetStereographicFactor": 0,
    "duration": 3000,
-   "targetHfov": 87,
+   "targetHfov": 77,
    "easing": "cubic_in_out"
   }
  ],
@@ -926,7 +926,7 @@
  "iconURL": "skin/IconButton_AEDEC92C_BAEB_45DC_41CC_6E5038866CC0.png",
  "id": "IconButton_AEDEC92C_BAEB_45DC_41CC_6E5038866CC0",
  "width": 196,
- "right": "41.44%",
+ "right": "40.23%",
  "borderSize": 0,
  "horizontalAlign": "center",
  "minWidth": 1,

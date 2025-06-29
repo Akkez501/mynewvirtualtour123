@@ -605,19 +605,6 @@
  ]
 },
 {
- "class": "PlayList",
- "id": "playList_AB15D0CF_BD1E_C45C_41E6_EAD336396E08",
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "class": "VideoPlayListItem",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AB15D0CF_BD1E_C45C_41E6_EAD336396E08, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AB15D0CF_BD1E_C45C_41E6_EAD336396E08, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ]
-},
-{
  "autoplay": true,
  "class": "PanoramaAudio",
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -695,6 +682,19 @@
   "height": 1920,
   "mp4Url": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344.mp4"
  }
+},
+{
+ "class": "PlayList",
+ "id": "playList_AA0D5788_BD27_CCC3_41DA_826F6AB78924",
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "class": "VideoPlayListItem",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AA0D5788_BD27_CCC3_41DA_826F6AB78924, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AA0D5788_BD27_CCC3_41DA_826F6AB78924, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ]
 },
 {
  "autoplay": true,

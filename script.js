@@ -605,6 +605,63 @@
  ]
 },
 {
+ "class": "PanoramaCamera",
+ "initialPosition": {
+  "hfov": 93,
+  "class": "PanoramaCameraPosition",
+  "yaw": -141.87,
+  "pitch": 1.82
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "class": "PanoramaCameraSequence",
+  "movements": [
+   {
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96,
+    "easing": "cubic_in"
+   },
+   {
+    "yawDelta": 1043,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96,
+    "easing": "linear"
+   },
+   {
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96,
+    "easing": "cubic_out"
+   }
+  ]
+ },
+ "id": "panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B_camera",
+ "displayMovements": [
+  {
+   "class": "TargetRotationalCameraDisplayMovement",
+   "easing": "linear",
+   "duration": 1000
+  },
+  {
+   "targetPitch": 1.82,
+   "class": "TargetRotationalCameraDisplayMovement",
+   "targetStereographicFactor": 0,
+   "duration": 3000,
+   "targetHfov": 93,
+   "easing": "cubic_in_out"
+  }
+ ],
+ "automaticZoomSpeed": 10,
+ "displayOriginPosition": {
+  "hfov": 165,
+  "class": "RotationalCameraDisplayPosition",
+  "yaw": -141.87,
+  "stereographicFactor": 1,
+  "pitch": -90
+ }
+},
+{
  "autoplay": true,
  "class": "PanoramaAudio",
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -638,19 +695,6 @@
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 2, 0)",
    "player": "this.MainViewerVideoPlayer",
    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 2, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 2)"
-  }
- ]
-},
-{
- "class": "PlayList",
- "id": "playList_ADB5FAD3_BAE6_C445_41C7_3172568D6E56",
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "class": "VideoPlayListItem",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_ADB5FAD3_BAE6_C445_41C7_3172568D6E56, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_ADB5FAD3_BAE6_C445_41C7_3172568D6E56, 0)",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
   }
  ]
 },
@@ -713,61 +757,17 @@
  "displayPlaybackBar": true
 },
 {
- "class": "PanoramaCamera",
- "initialPosition": {
-  "hfov": 93,
-  "class": "PanoramaCameraPosition",
-  "yaw": -141.87,
-  "pitch": 1.82
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "class": "PanoramaCameraSequence",
-  "movements": [
-   {
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96,
-    "easing": "cubic_in"
-   },
-   {
-    "yawDelta": 1043,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96,
-    "easing": "linear"
-   },
-   {
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96,
-    "easing": "cubic_out"
-   }
-  ]
- },
- "id": "panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B_camera",
- "displayMovements": [
+ "class": "PlayList",
+ "id": "playList_AE929D71_BAE9_7C45_41E7_44ECCCBD7685",
+ "items": [
   {
-   "class": "TargetRotationalCameraDisplayMovement",
-   "easing": "linear",
-   "duration": 1000
-  },
-  {
-   "targetPitch": 1.82,
-   "class": "TargetRotationalCameraDisplayMovement",
-   "targetStereographicFactor": 0,
-   "duration": 3000,
-   "targetHfov": 93,
-   "easing": "cubic_in_out"
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "class": "VideoPlayListItem",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_AE929D71_BAE9_7C45_41E7_44ECCCBD7685, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_AE929D71_BAE9_7C45_41E7_44ECCCBD7685, 0)",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
   }
- ],
- "automaticZoomSpeed": 10,
- "displayOriginPosition": {
-  "hfov": 165,
-  "class": "RotationalCameraDisplayPosition",
-  "yaw": -141.87,
-  "stereographicFactor": 1,
-  "pitch": -90
- }
+ ]
 },
 {
  "progressBarBackgroundColor": [

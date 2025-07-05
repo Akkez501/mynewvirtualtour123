@@ -45,7 +45,7 @@
     "easing": "linear",
     "yawSpeed": 7.96,
     "class": "DistancePanoramaCameraMovement",
-    "yawDelta": 1043
+    "yawDelta": 3563
    },
    {
     "easing": "cubic_out",
@@ -56,6 +56,15 @@
   ],
   "class": "PanoramaCameraSequence"
  }
+},
+{
+ "viewerArea": "this.MainViewer",
+ "class": "PanoramaPlayer",
+ "displayPlaybackBar": true,
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "audios": [
@@ -342,12 +351,6 @@
  "hfovMax": 87
 },
 {
- "displayPlaybackBar": true,
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "class": "VideoPlayer"
-},
-{
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
@@ -370,7 +373,7 @@
     "easing": "linear",
     "yawSpeed": 7.96,
     "class": "DistancePanoramaCameraMovement",
-    "yawDelta": 323
+    "yawDelta": 3563
    },
    {
     "easing": "cubic_out",
@@ -396,16 +399,22 @@
  }
 },
 {
+ "displayPlaybackBar": true,
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "class": "VideoPlayer"
+},
+{
  "items": [
   {
    "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_D66BC2A6_D944_C566_41BD_669B730A8934, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_D66BC2A6_D944_C566_41BD_669B730A8934, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_CC05ACE6_D94C_5EE6_41B1_00F2F1A4F277, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_CC05ACE6_D94C_5EE6_41B1_00F2F1A4F277, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_D66BC2A6_D944_C566_41BD_669B730A8934",
+ "id": "playList_CC05ACE6_D94C_5EE6_41B1_00F2F1A4F277",
  "class": "PlayList"
 },
 {
@@ -422,22 +431,6 @@
   "width": 1920,
   "class": "VideoResource",
   "height": 1080
- }
-},
-{
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344_t.jpg",
- "width": 1080,
- "loop": false,
- "class": "Video",
- "id": "video_A9B6909B_BB69_C4C5_41E0_F0CA05311344",
- "height": 1920,
- "video": {
-  "mp4Url": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344.mp4",
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920
  }
 },
 {
@@ -764,6 +757,20 @@
  "class": "PlayList"
 },
 {
+ "to": "left",
+ "id": "effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E",
+ "easing": "linear",
+ "class": "SlideOutEffect",
+ "duration": 2000
+},
+{
+ "id": "effect_CAE65906_D944_4727_41D4_24EB99BAD6DF",
+ "easing": "linear",
+ "class": "SlideInEffect",
+ "duration": 2000,
+ "from": "right"
+},
+{
  "autoplay": true,
  "loop": true,
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -774,13 +781,20 @@
  }
 },
 {
- "viewerArea": "this.MainViewer",
- "class": "PanoramaPlayer",
- "displayPlaybackBar": true,
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "class": "Video",
+ "id": "video_A9B6909B_BB69_C4C5_41E0_F0CA05311344",
+ "height": 1920,
+ "video": {
+  "mp4Url": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344.mp4",
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920
+ }
 },
 {
  "transitionDuration": 500,
@@ -907,6 +921,35 @@
  }
 },
 {
+ "id": "Image_C9613604_D95C_4D1A_41D1_A5372F0D3DD6",
+ "width": "100%",
+ "left": "0%",
+ "class": "Image",
+ "minWidth": 1,
+ "url": "skin/Image_C9613604_D95C_4D1A_41D1_A5372F0D3DD6.gif",
+ "maxWidth": 1920,
+ "borderSize": 0,
+ "paddingRight": 0,
+ "horizontalAlign": "center",
+ "height": "100%",
+ "top": "0%",
+ "minHeight": 1,
+ "paddingBottom": 0,
+ "shadow": false,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "maxHeight": 1080,
+ "scaleMode": "fit_inside",
+ "verticalAlign": "middle",
+ "visible": false,
+ "paddingTop": 0,
+ "propagateClick": false,
+ "data": {
+  "name": "Image13397"
+ },
+ "paddingLeft": 0
+},
+{
  "id": "Image_A969F93A_BB1F_45C7_41D5_3CBDB37A10B0",
  "width": "100%",
  "left": "0%",
@@ -1010,7 +1053,7 @@
  "horizontalAlign": "center",
  "height": "24.256%",
  "minHeight": 1,
- "click": "this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, true, 0, null, null, false); this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, false, 3000, null, 'hideEffect', false); this.playGlobalAudio(this.audio_D77C0F7E_D9C4_3BE6_41C0_9286FF069CA8); this.playGlobalAudio(this.audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE)",
+ "click": "this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, true, 0, null, null, false); this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, false, 3000, null, 'hideEffect', false); this.playGlobalAudio(this.audio_D77C0F7E_D9C4_3BE6_41C0_9286FF069CA8); this.playGlobalAudio(this.audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE); this.setComponentVisibility(this.IconButton_C9A5322F_D944_4566_41D9_7990E03369F9, false, 0, null, null, false); this.setComponentVisibility(this.IconButton_C9A5322F_D944_4566_41D9_7990E03369F9, true, 0, this.effect_CAE65906_D944_4727_41D4_24EB99BAD6DF, 'showEffect', false)",
  "paddingBottom": 0,
  "shadow": false,
  "backgroundOpacity": 0,
@@ -1027,8 +1070,41 @@
  "paddingLeft": 0
 },
 {
- "oggUrl": "media/audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A.ogg",
- "mp3Url": "media/audio_96B30D20_B18F_240B_41DC_70CE9CAD7C5A.mp3",
+ "cursor": "hand",
+ "id": "IconButton_C9A5322F_D944_4566_41D9_7990E03369F9",
+ "width": 171.05,
+ "class": "IconButton",
+ "right": "33.72%",
+ "iconURL": "skin/IconButton_C9A5322F_D944_4566_41D9_7990E03369F9.png",
+ "minWidth": 1,
+ "transparencyActive": false,
+ "maxWidth": 552,
+ "top": "32.19%",
+ "borderSize": 0,
+ "paddingRight": 0,
+ "mode": "push",
+ "horizontalAlign": "center",
+ "height": 120,
+ "minHeight": 1,
+ "click": "this.mainPlayList.set('selectedIndex', 1); this.playGlobalAudio(this.audio_D77C0F7E_D9C4_3BE6_41C0_9286FF069CA8); this.setComponentVisibility(this.Image_C9613604_D95C_4D1A_41D1_A5372F0D3DD6, false, 0, this.effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E, 'hideEffect', false); this.setComponentVisibility(this.Image_A969F93A_BB1F_45C7_41D5_3CBDB37A10B0, false, 0, this.effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E, 'hideEffect', false); this.setComponentVisibility(this.IconButton_AEDEC92C_BAEB_45DC_41CC_6E5038866CC0, false, 0, this.effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E, 'hideEffect', false); this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, false, 0, this.effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E, 'hideEffect', false); this.setComponentVisibility(this.Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73, false, 0, this.effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E, 'hideEffect', false); this.setComponentVisibility(this.IconButton_C9A5322F_D944_4566_41D9_7990E03369F9, false, 0, this.effect_CCE03506_D94C_4F27_41C1_61AD1A85E05E, 'hideEffect', false)",
+ "paddingBottom": 0,
+ "shadow": false,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "maxHeight": 591,
+ "verticalAlign": "middle",
+ "pressedIconURL": "skin/IconButton_C9A5322F_D944_4566_41D9_7990E03369F9_pressed.png",
+ "visible": false,
+ "paddingTop": 0,
+ "propagateClick": false,
+ "data": {
+  "name": "Step in"
+ },
+ "paddingLeft": 0
+},
+{
+ "oggUrl": "media/audio_A7354570_B1F8_E618_41E1_A4567DCC8CA8.ogg",
+ "mp3Url": "media/audio_A7354570_B1F8_E618_41E1_A4567DCC8CA8.mp3",
  "id": "audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
  "class": "AudioResource"
 }],
@@ -1038,10 +1114,12 @@
  },
  "children": [
   "this.MainViewer",
+  "this.Image_C9613604_D95C_4D1A_41D1_A5372F0D3DD6",
   "this.Image_A969F93A_BB1F_45C7_41D5_3CBDB37A10B0",
   "this.IconButton_AEDEC92C_BAEB_45DC_41CC_6E5038866CC0",
   "this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7",
-  "this.Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73"
+  "this.Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73",
+  "this.IconButton_C9A5322F_D944_4566_41D9_7990E03369F9"
  ],
  "id": "rootPlayer",
  "vrPolyfillScale": 0.5,

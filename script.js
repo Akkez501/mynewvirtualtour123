@@ -398,42 +398,14 @@
 {
  "items": [
   {
-   "media": "this.panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B_camera"
-  },
-  {
-   "media": "this.panorama_993375AA_B18F_241F_41E1_9E05DDD76AAB",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 2)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_993375AA_B18F_241F_41E1_9E05DDD76AAB_camera"
-  },
-  {
-   "media": "this.video_A9B6909B_BB69_C4C5_41E0_F0CA05311344",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 2, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 2)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 2, 0)",
-   "player": "this.MainViewerVideoPlayer",
-   "end": "this.trigger('tourEnded')"
-  }
- ],
- "id": "mainPlayList",
- "class": "PlayList"
-},
-{
- "items": [
-  {
    "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_C94179F1_D94C_C6FA_41E4_9AC5BE6DD565, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_C94179F1_D94C_C6FA_41E4_9AC5BE6DD565, 0)",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_D66BC2A6_D944_C566_41BD_669B730A8934, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_D66BC2A6_D944_C566_41BD_669B730A8934, 0)",
    "class": "VideoPlayListItem",
    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
    "player": "this.MainViewerVideoPlayer"
   }
  ],
- "id": "playList_C94179F1_D94C_C6FA_41E4_9AC5BE6DD565",
+ "id": "playList_D66BC2A6_D944_C566_41BD_669B730A8934",
  "class": "PlayList"
 },
 {
@@ -764,6 +736,34 @@
  "hfovMax": 130
 },
 {
+ "items": [
+  {
+   "media": "this.panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_BC9FB089_B1C8_5E09_41E3_52E58896789B_camera"
+  },
+  {
+   "media": "this.panorama_993375AA_B18F_241F_41E1_9E05DDD76AAB",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 2)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_993375AA_B18F_241F_41E1_9E05DDD76AAB_camera"
+  },
+  {
+   "media": "this.video_A9B6909B_BB69_C4C5_41E0_F0CA05311344",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 2, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.mainPlayList, 2)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 2, 0)",
+   "player": "this.MainViewerVideoPlayer",
+   "end": "this.trigger('tourEnded')"
+  }
+ ],
+ "id": "mainPlayList",
+ "class": "PlayList"
+},
+{
  "autoplay": true,
  "loop": true,
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -940,11 +940,11 @@
  "id": "IconButton_AEDEC92C_BAEB_45DC_41CC_6E5038866CC0",
  "width": 196,
  "class": "IconButton",
- "right": "37.09%",
+ "right": "36.55%",
  "iconURL": "skin/IconButton_AEDEC92C_BAEB_45DC_41CC_6E5038866CC0.png",
  "minWidth": 1,
  "transparencyActive": false,
- "maxWidth": 200,
+ "maxWidth": 500,
  "top": "0.66%",
  "borderSize": 0,
  "paddingRight": 0,
@@ -998,24 +998,24 @@
 },
 {
  "id": "Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73",
- "width": "14.113%",
+ "width": "18.577%",
  "class": "Image",
  "right": "38.18%",
  "minWidth": 1,
  "url": "skin/Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73.gif",
- "maxWidth": 647,
+ "maxWidth": 1000,
  "borderSize": 0,
  "paddingRight": 0,
- "bottom": "9.37%",
+ "bottom": "7.83%",
  "horizontalAlign": "center",
- "height": "19.405%",
+ "height": "24.256%",
  "minHeight": 1,
  "click": "this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, true, 0, null, null, false); this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, false, 3000, null, 'hideEffect', false); this.playGlobalAudio(this.audio_D77C0F7E_D9C4_3BE6_41C0_9286FF069CA8); this.playGlobalAudio(this.audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE)",
  "paddingBottom": 0,
  "shadow": false,
  "backgroundOpacity": 0,
  "borderRadius": 0,
- "maxHeight": 589,
+ "maxHeight": 1000,
  "scaleMode": "fit_inside",
  "verticalAlign": "middle",
  "visible": false,

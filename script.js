@@ -58,12 +58,6 @@
  }
 },
 {
- "displayPlaybackBar": true,
- "viewerArea": "this.MainViewer",
- "id": "MainViewerVideoPlayer",
- "class": "VideoPlayer"
-},
-{
  "audios": [
   "this.audio_A7354570_B1F8_E618_41E1_A4567DCC8CA8"
  ],
@@ -348,6 +342,12 @@
  "hfovMax": 87
 },
 {
+ "displayPlaybackBar": true,
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerVideoPlayer",
+ "class": "VideoPlayer"
+},
+{
  "automaticZoomSpeed": 10,
  "class": "PanoramaCamera",
  "initialPosition": {
@@ -424,6 +424,19 @@
  "class": "PlayList"
 },
 {
+ "items": [
+  {
+   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
+   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_C94179F1_D94C_C6FA_41E4_9AC5BE6DD565, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_C94179F1_D94C_C6FA_41E4_9AC5BE6DD565, 0)",
+   "class": "VideoPlayListItem",
+   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
+   "player": "this.MainViewerVideoPlayer"
+  }
+ ],
+ "id": "playList_C94179F1_D94C_C6FA_41E4_9AC5BE6DD565",
+ "class": "PlayList"
+},
+{
  "label": "Flying Hearts Green Screen Effects",
  "scaleMode": "fit_inside",
  "thumbnailUrl": "media/video_90CFFD90_8241_52EE_41D8_B4975D628A67_t.jpg",
@@ -440,13 +453,33 @@
  }
 },
 {
- "viewerArea": "this.MainViewer",
- "class": "PanoramaPlayer",
- "displayPlaybackBar": true,
- "touchControlMode": "drag_rotation",
- "id": "MainViewerPanoramaPlayer",
- "gyroscopeVerticalDraggingEnabled": true,
- "mouseControlMode": "drag_acceleration"
+ "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
+ "scaleMode": "fit_inside",
+ "thumbnailUrl": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344_t.jpg",
+ "width": 1080,
+ "loop": false,
+ "class": "Video",
+ "id": "video_A9B6909B_BB69_C4C5_41E0_F0CA05311344",
+ "height": 1920,
+ "video": {
+  "mp4Url": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344.mp4",
+  "width": 1080,
+  "class": "VideoResource",
+  "height": 1920
+ }
+},
+{
+ "autoplay": true,
+ "audio": {
+  "mp3Url": "media/audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE.mp3",
+  "oggUrl": "media/audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE.ogg",
+  "class": "AudioResource"
+ },
+ "class": "MediaAudio",
+ "id": "audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE",
+ "data": {
+  "label": "clapping"
+ }
 },
 {
  "partial": false,
@@ -731,32 +764,6 @@
  "hfovMax": 130
 },
 {
- "items": [
-  {
-   "media": "this.video_90CFFD90_8241_52EE_41D8_B4975D628A67",
-   "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_C90DE92A_D944_476F_41DC_A6B033C77508, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_C90DE92A_D944_476F_41DC_A6B033C77508, 0)",
-   "class": "VideoPlayListItem",
-   "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
-   "player": "this.MainViewerVideoPlayer"
-  }
- ],
- "id": "playList_C90DE92A_D944_476F_41DC_A6B033C77508",
- "class": "PlayList"
-},
-{
- "autoplay": true,
- "audio": {
-  "mp3Url": "media/audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE.mp3",
-  "oggUrl": "media/audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE.ogg",
-  "class": "AudioResource"
- },
- "class": "MediaAudio",
- "id": "audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE",
- "data": {
-  "label": "clapping"
- }
-},
-{
  "autoplay": true,
  "loop": true,
  "audio": "this.audioresource_A7357570_B1F8_E618_41A5_4059A9231C2A",
@@ -767,20 +774,13 @@
  }
 },
 {
- "label": "Black and Gold Modern Happy Birthday Greeting Mobile Video (1)",
- "scaleMode": "fit_inside",
- "thumbnailUrl": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344_t.jpg",
- "width": 1080,
- "loop": false,
- "class": "Video",
- "id": "video_A9B6909B_BB69_C4C5_41E0_F0CA05311344",
- "height": 1920,
- "video": {
-  "mp4Url": "media/video_A9B6909B_BB69_C4C5_41E0_F0CA05311344.mp4",
-  "width": 1080,
-  "class": "VideoResource",
-  "height": 1920
- }
+ "viewerArea": "this.MainViewer",
+ "class": "PanoramaPlayer",
+ "displayPlaybackBar": true,
+ "touchControlMode": "drag_rotation",
+ "id": "MainViewerPanoramaPlayer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "mouseControlMode": "drag_acceleration"
 },
 {
  "transitionDuration": 500,
@@ -998,17 +998,17 @@
 },
 {
  "id": "Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73",
- "width": "10.676%",
+ "width": "14.113%",
  "class": "Image",
- "right": "38.24%",
+ "right": "38.18%",
  "minWidth": 1,
  "url": "skin/Image_D6EC034E_D9C4_CB26_41C1_D45D3566EE73.gif",
  "maxWidth": 647,
  "borderSize": 0,
  "paddingRight": 0,
- "bottom": "8.16%",
+ "bottom": "9.37%",
  "horizontalAlign": "center",
- "height": "14.112%",
+ "height": "19.405%",
  "minHeight": 1,
  "click": "this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, true, 0, null, null, false); this.setComponentVisibility(this.Image_D74DF31B_D9FC_4B2E_41A8_3B865C6DC2E7, false, 3000, null, 'hideEffect', false); this.playGlobalAudio(this.audio_D77C0F7E_D9C4_3BE6_41C0_9286FF069CA8); this.playGlobalAudio(this.audio_C8B79482_D9BC_4D1F_41E1_B88A192CD9FE)",
  "paddingBottom": 0,
